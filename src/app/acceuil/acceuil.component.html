@@ -1,33 +1,7 @@
-<!-- start header  -->
-<header>
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="assets/images/logo.png" alt="logo">
-        </a>
-        <nav>
-            <mat-icon class="toggle-menu">menu</mat-icon>
-            <ul>
-                <li><a class="active" href="#"> HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">NOS ACTIONS</a></li>
-                <li><a href="#">JOIN uS</a></li>
 
-
-            </ul>
-            <mat-form-field class="example-form-field">
-                <!-- Utilisez le composant mat-input pour le champ de recherche -->
-                <input matInput>
-                <!-- Ajoutez l'icône de recherche à la fin du champ de recherche -->
-                <mat-icon>search</mat-icon>
-            </mat-form-field>
-
-        </nav>
-    </div>
-</header>
-<!-- end header -->
-
+<app-navbar></app-navbar>
 <!-- Start qui somme nous -->
-<section class="container">
+<section >
     <div class="nousomme">
         <div class="titre">
             <h1>
@@ -43,17 +17,18 @@
                     <span>réseau mondial structuré présent dans près de 200 pays et regroupant </span>
                     <span>au total 200.000 citoyens actifs.</span>
                 </p>
-                   
-                
+                     
             </div>
             <div class="more">
-                <button class="read-more">READ MORE</button>
-                <button class="contact-us">CONTACT US</button>
+                <div class="btn-more">
+                    <div>
+                        <button class="read-more">READ MORE</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="team">
-            <img src="assets/images/team.jpeg" alt="Team Image">
-
+            <img src="assets/images/team.png" alt="Team Image">
         </div>
     </div>
 </section>
@@ -61,36 +36,39 @@
 <!-- end qui somme nous -->
 
 <!-- start why jci -->
-<section class="container">
-    <div class="section2">
-        <div class="container">
+<section >
+    <div class="Why">
+        <div class="contain">
             <div class="why-jci">
                 <div class="title">
                     <h1> WHY JCI</h1>
                 </div>
                 <div class="text">
-                    <p>
                         <span>junior chambre</span>
-                        <span>Internationale(JCI)</span>
-                        <span>is a</span>
-                        <span> wordwide federation of</span>
+                        <span>Internationale(JCI) is a</span>
+                        <span>wordwide federation of</span>
                         <span>young leaders end entrepreneurs</span>
-                    </p>
                 </div>
-                <div class="btn">
+                <div class="btn-why-jci">
                     <button>Read more</button>
                 </div>
             </div>
             <div class="jci-logo">
-                <img src="assets/images/logo2.jpeg" alt="logo">
+                <div class="logo">
+                    <img src="assets/images/logo-jci.png" alt="logo">
+                </div>
+                
             </div>
             <div class="joinus">
                 <div class="text">
-                
-                        <span>Harvard gave me an</span>
+                        <span>"Harvard gave me an</span>
                         <span>education but junior</span>
                         <span>chambre gave me education</span>
-                        <span>for life </span>
+                        <span>for life" </span>
+                        <span class="kenedy">JOHN KENEDY </span>
+                </div>
+                <div class="btn-joinus">
+                    <button>JOIN US</button>
                 </div>
             </div>
         </div>
@@ -101,36 +79,32 @@
 
 <!-- /* start founders */ -->
 
-<div class="container">
-    <div class="founders text-center my-4">
+<section class="cont">
+    <div class="founders ">
         <div class="content">
+            <div class="top-bar"></div>
             <div class="title">
-                <h1>
-                    FOUNDERS PERSPECTIVE
-                </h1>
+                <h1>FOUNDERS PERSPECTIVE</h1>
             </div>
             <div class="text">
-                <p>
-                    From within the walls of the soul of this organization wherein the foundation 
-                    of character and good citizenship are laid.
-                </p>
+                <span>From within the walls of the soul of this organization wherein the foundation </span>
+                <span>of character and good citizenship are laid.</span>
             </div>
         </div>
     </div>
-</div>
+</section>
 
+<!-- /* end  founders */ -->
 
-<!-- /* end founders */ -->
+<!-- /* start cards */ -->
 
-<!-- Ajouter trois cartes Bootstrap -->
-<div class="container">
-    <div class="row">
+<div class="cartes">
+    <div class="cart row ">
         <div class="col-md-4">
             <div class="card1 card text-center">
                 <div class="card-body">
                    <div class="logocard">
                     <mat-icon class="icon">flight</mat-icon>
-
                    </div>
                    <div class="titre">
                     <h3> OUR MISSION</h3>
@@ -138,7 +112,7 @@
                    <div class="text">
                     <p>To provide leqdership develpment oportunities</p>
                    </div>
-                   <div class="btn">
+                   <div class="btn-resd-more">
                     <button>RED MORE</button>
                    </div>
                 </div>
@@ -156,7 +130,7 @@
                     <div class="text">
                      <p>To provide leqdership develpment oportunities</p>
                     </div>
-                    <div class="btn">
+                    <div class="btn-resd-more">
                      <button>RED MORE</button>
                     </div>
                  </div>
@@ -176,7 +150,7 @@
                     <div class="text">
                      <p>To provide leqdership develpment oportunities</p>
                     </div>
-                    <div class="btn">
+                    <div class="btn-resd-more">
                      <button>RED MORE</button>
                     </div>
                  </div>
@@ -184,49 +158,49 @@
         </div>
     </div>
 </div>
-<!-- Footer -->
-<section class="general">
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3>JCI<span>ZOUAOUINE</span></h3>
-        <p class="footer-links">
-          <a href="#">Accueil</a>
-          ·
-          <a href="#">About</a>
-          ·
-          <a href="#">Contact</a>
-        </p>
-        <p class="footer-company-name">JCI ZOUAOUINE &copy; 2023</p>
-      </div>
-  
-      <div class="footer-center">
-        <div>
-          <mat-icon>location_on</mat-icon>
-          <p><span>Ariana</span> TUN (Tunisie)</p>
+
+<!-- /* end cards */ -->
+
+
+<!-- start our project  -->
+<section class="notre-projet">
+    <div class="prigect row justify-content-between">
+        <div class="ouer-project col-md-6">
+            <div class="title">
+                <h1> OUR PROJECT </h1>
+            </div>
+            <div class="paragraphe">
+                <p>
+                    <span>the leadership devlepment intiative within JCI , </span>
+                    <span>is a grounbreaking endavor designed to empower young </span>
+                    <span>  is a grounbreaking endavor designed to empower young </span>
+                    <span>individuals with essential skills, knowledg, and experience </span>     
+                </p>
+            </div>
+            <div class="btn-our-project">
+                <button>Read more</button>
+            </div>
         </div>
-        <div>
-          <mat-icon>phone</mat-icon>
-          <p>+216 20 846 394</p>
+        <div class="photos col-md-6">
+            <div class="imgs">
+                <img src="assets/images/proj1.jpg" alt="logo">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/proj2.jpg" alt="logo">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/proj3.jpg" alt="logo">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/proj4.jpg" alt="logo">
+            </div>
         </div>
-        <div>
-          <mat-icon>email</mat-icon>
-          <p><a href="mailto:Milyfashionstore@gmail.com">JCIZOUAOUINEgmail.com</a></p>
-        </div>
-      </div>
-  
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About Us</span>
-          Mily, For the Woman Who Deserves It, web developers Khaoula &amp; Mahdi.
-        </p>
-        <div class="footer-icons">
-          <a href="#"><mat-icon>facebook</mat-icon></a>
-          <a href="#"><mat-icon>mdi-instagram</mat-icon></a>
-          <a href="#"><mat-icon>mdi-twitter</mat-icon></a>
-          <a href="#"><mat-icon>mdi-youtube</mat-icon></a>
-          
-        </div>
-      </div>
-    </footer>
-  </section>
-  
+    </div>
+</section>
+<section>
+    <div class="devloppment">
+        <img src="assets/images/developing.png" alt="Team Image">
+    </div>
+</section>
+<!-- start our project  -->
+<app-footer></app-footer>

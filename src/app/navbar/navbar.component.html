@@ -1,0 +1,96 @@
+<!-- start header large ecran -->
+<header>
+  <div class="head">
+    <a href="#" class="logo">
+      <img src="assets/images/Zouaouine.png" alt="logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a routerLink="/Acceuil" [routerLinkActive]="'active'"> HOME</a></li>
+        <li><a routerLink="/about" [routerLinkActive]="'active'">About Us</a></li>
+        <li><a routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS</a></li>
+        <li><a  routerLink="/joinus" [routerLinkActive]="'active'">JOIN-US</a></li>
+
+        <!-- <li class="nav-item">
+                <a class="dropdown-toggle" href="#" role="button" onclick="toggleDropdown('dropdown-menu')">
+                  JOIN uS
+                </a>
+                <ul class="dropdownmenu" id="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+
+      </ul>
+      <mat-form-field class="example-form-field">
+        <input matInput>
+        <mat-icon>search</mat-icon>
+      </mat-form-field>
+    </nav>
+  </div>
+</header>
+<!-- end header large ecran -->
+
+
+<!-- start navbar small ecran -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+      aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img src="assets/images/Zouaouine.png" alt="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-person" viewBox="0 0 16 16">
+      <!-- Your person icon path here -->
+    </svg>
+    <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+          <span>JCI SOUAOUINE</span>
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About-Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/portfelio">Portfelio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service">NOS ACTIONS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              JOIN uS
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- end navbar small ecran -->

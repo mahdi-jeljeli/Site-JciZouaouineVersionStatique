@@ -1,0 +1,67 @@
+.head{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 300px;
+}
+.head .conteneur{
+    display: block;
+    justify-content: center;
+}
+.head .conteneur .logo{
+    display: flex;
+    justify-content: center;
+}
+.head .conteneur  .title_1{
+    margin-bottom: 30px;
+   
+}
+
+.head .conteneur .formulaire{
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    background: linear-gradient(to bottom, #EDBE38, #0097D7);
+}
+.head .conteneur .formulaire .title{
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 30px;
+   
+}
+.head .conteneur .formulaire .form{
+    /* background-color: brown; */
+    text-align: center;
+    line-height: 100vh;
+    margin-top: 30px;
+  
+}
+.head .conteneur .formulaire .form form {
+    display: flex;
+    flex-direction: column; /* Organize inputs one below the other */
+    margin: 0 30px;
+    border-radius: 50px;
+}
+.head .conteneur .formulaire .form form mat-form-field  input{
+    color: #fff;
+}
+.head .conteneur .formulaire .submit{
+    display: flex;
+    justify-content: center;
+    padding: 5px ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+.head .conteneur .formulaire .submit button{
+    
+    padding: 5px 20px;
+    background-color: white;
+    border-color: #EDBE38;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #EDBE38;
+}

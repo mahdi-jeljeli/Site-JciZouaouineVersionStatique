@@ -1,0 +1,150 @@
+<app-navbar></app-navbar>
+<section class="head">
+    <div class="conteneur">
+        <div class="logo">
+            <img width="200px" src="assets/images/ZouaouineLogoBleu.png" alt="logo">
+        </div>
+        <div class="title_1">
+            <h1>MEMBERSHIP APPLICATION FOROM</h1>
+        </div>
+        <div class="formulaire">
+            <div class="title">
+                <h1>PERSONAL INFORMATION</h1>
+            </div>
+            <div class="form">
+                <form name="addForm" [formGroup]="addForm">
+                    <mat-form-field class="full-width" appearance="fill">
+                      <mat-label>Name</mat-label>
+                      <input formControlName="FirsLastName" matInput placeholder="First Name Last Name"  type="text" required />
+                      <mat-error *ngIf="addForm.controls['FirsLastName'].hasError('required')">
+                        Name est obligatoire
+                      </mat-error>
+                      <mat-error *ngIf="addForm.controls['FirsLastName'].hasError('maxlength')">
+                        Name n'est pas valide
+                      </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="fill">
+                      <mat-label>Date of Birth</mat-label>
+                      <input formControlName="DateOfBirth" matInput placeholder=" Date Of Birth" 
+                        type="text" required />
+                      <mat-error *ngIf="addForm.controls['DateOfBirth'].hasError('required')">
+                        DateOfBirth est obligatoire
+                      </mat-error>
+                      <mat-error *ngIf="
+                          addForm.controls['DateOfBirth'].hasError('pattern') &&
+                          !addForm.controls['DateOfBirth'].hasError('required')
+                        ">
+                        DateOfBirth est non valide
+                      </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="fill">
+                      <mat-label> Email</mat-label>
+                      <input formControlName="Email" matInput placeholder="Email"  type="text" />
+                      <mat-error *ngIf="addForm.controls['Email'].hasError('required')">
+                        Email est obligatoire
+                      </mat-error>
+                      <mat-error *ngIf="
+                          addForm.controls['Email'].hasError('pattern') &&
+                          !addForm.controls['Email'].hasError('required')
+                        ">
+                        Email est non valide"
+                      </mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> Phone Number</mat-label>
+                        <input formControlName="phone" matInput placeholder="phone"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            Phone Number est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['phone'].hasError('pattern') &&
+                            !addForm.controls['phone'].hasError('required')
+                          ">
+                          Phone Number est non valide"
+                        </mat-error>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> education</mat-label>
+                        <input formControlName="education" matInput placeholder="education"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            education est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['education'].hasError('pattern') &&
+                            !addForm.controls['education'].hasError('required')
+                          ">
+                          education est non valide"
+                        </mat-error>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> Profession Occupation</mat-label>
+                        <input formControlName="ProfOccupation" matInput placeholder="Profession Occupation"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            Profession est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['ProfOccupation'].hasError('pattern') &&
+                            !addForm.controls['ProfOccupation'].hasError('required')
+                          ">
+                          Profession est non valide"
+                        </mat-error>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> How did You here about JCI</mat-label>
+                        <input formControlName="How" matInput placeholder="How did You here about JCI"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            How est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['How'].hasError('pattern') &&
+                            !addForm.controls['How'].hasError('required')
+                          ">
+                          How est non valide"
+                        </mat-error>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> Why atre you intersted</mat-label>
+                        <input formControlName="Why" matInput placeholder="Why atre you intersted in joining JCI ?"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            Why est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['Why'].hasError('pattern') &&
+                            !addForm.controls['Why'].hasError('required')
+                          ">
+                          Why est non valide"
+                        </mat-error>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="fill">
+                        <mat-label> Interisting</mat-label>
+                        <input formControlName="Interisting" matInput placeholder="Are you interestedin taking a leadership role within JCI ? ?"  type="text" />
+                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
+                            Why est obligatoire
+                        </mat-error>
+                        <mat-error *ngIf="
+                            addForm.controls['Interisting'].hasError('pattern') &&
+                            !addForm.controls['Interisting'].hasError('required')
+                          ">
+                          Why est non valide"
+                        </mat-error>
+                      </mat-form-field>
+                  </form>
+            </div>
+
+            <div class="submit">
+                <button>SuBMIT</button>
+            </div>
+            
+        </div>
+    </div>
+   
+</section>
+<app-footer></app-footer>
