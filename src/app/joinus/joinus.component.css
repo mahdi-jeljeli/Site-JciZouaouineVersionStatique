@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    margin-bottom: 300px;
+    
 }
 .head .conteneur{
     display: block;
@@ -22,12 +22,11 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    border-radius: 10%;
+    border-radius: 5%;
     background: linear-gradient(to bottom, #EDBE38, #0097D7);
 }
 .head .conteneur .formulaire .title{
     display: flex;
-    
     justify-content: center;
     margin-top: 30px;
    
@@ -64,4 +63,28 @@
     border-radius: 20px;
     font-weight: bolder;
     color: #EDBE38;
+}
+
+.dev{
+
+    display: flex;
+    justify-content: center;
+}
+::ng-deep .mat-option {
+    /* background:linear-gradient(to bottom, #EDBE38, #0097D7);
+    color: #ddd; */
+  
+  }
+.devloppment {
+    justify-content: center;
+    width: 60%;
+    overflow: hidden; 
+    margin-bottom: 60px;
+    margin-left: 5%;
+}
+
+.devloppment img {
+    width: 100%;
+    height: auto;
+    display: block;
 }

@@ -1,150 +1,177 @@
 <app-navbar></app-navbar>
 <section class="head">
-    <div class="conteneur">
-        <div class="logo">
-            <img width="200px" src="assets/images/ZouaouineLogoBleu.png" alt="logo">
-        </div>
-        <div class="title_1">
-            <h1>MEMBERSHIP APPLICATION FOROM</h1>
-        </div>
-        <div class="formulaire">
-            <div class="title">
-                <h1>PERSONAL INFORMATION</h1>
-            </div>
-            <div class="form">
-                <form name="addForm" [formGroup]="addForm">
-                    <mat-form-field class="full-width" appearance="fill">
-                      <mat-label>Name</mat-label>
-                      <input formControlName="FirsLastName" matInput placeholder="First Name Last Name"  type="text" required />
-                      <mat-error *ngIf="addForm.controls['FirsLastName'].hasError('required')">
-                        Name est obligatoire
-                      </mat-error>
-                      <mat-error *ngIf="addForm.controls['FirsLastName'].hasError('maxlength')">
-                        Name n'est pas valide
-                      </mat-error>
-                    </mat-form-field>
+  <div class="conteneur">
+    <div class="logo">
+      <img width="200px" src="assets/images/ZouaouineLogoBleu.png" alt="logo">
+    </div>
+    <div class="title_1">
+      <h1>MEMBERSHIP APPLICATION FOROM</h1>
+    </div>
+    <div class="formulaire">
+      <div class="title">
+        <h1>PERSONAL INFORMATION</h1>
+      </div>
+      <div class="form">
+        <form name="JoinUsForm" [formGroup]="JoinUsForm">
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input formControlName="FirsLastName" matInput placeholder="First Name Last Name" type="text" required />
+            <mat-error *ngIf="JoinUsForm.controls['FirsLastName'].hasError('required')">
+              Name est obligatoire
+            </mat-error>
+            <mat-error *ngIf="JoinUsForm.controls['FirsLastName'].hasError('maxlength')">
+              Name n'est pas valide
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Date of Birth</mat-label>
+            <input
+              formControlName="DateOfBirth"
+              matInput
+              placeholder="Date Of Birth"
+              [matDatepicker]="picker"
+              required
+            />
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="JoinUsForm.controls['DateOfBirth'].hasError('required')">
+              Date of Birth is required
+            </mat-error>
+            <mat-error
+              *ngIf="
+                JoinUsForm.controls['DateOfBirth'].hasError('pattern') &&
+                !JoinUsForm.controls['DateOfBirth'].hasError('required')
+              "
+            >
+              Date of Birth is not valid
+            </mat-error>
+          </mat-form-field>
+          
 
-                    <mat-form-field class="full-width" appearance="fill">
-                      <mat-label>Date of Birth</mat-label>
-                      <input formControlName="DateOfBirth" matInput placeholder=" Date Of Birth" 
-                        type="text" required />
-                      <mat-error *ngIf="addForm.controls['DateOfBirth'].hasError('required')">
-                        DateOfBirth est obligatoire
-                      </mat-error>
-                      <mat-error *ngIf="
-                          addForm.controls['DateOfBirth'].hasError('pattern') &&
-                          !addForm.controls['DateOfBirth'].hasError('required')
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label> Email</mat-label>
+            <input formControlName="Email" matInput placeholder="Email" type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['Email'].hasError('required')">
+              Email est obligatoire
+            </mat-error>
+            <mat-error *ngIf="
+                          JoinUsForm.controls['Email'].hasError('pattern') &&
+                          !JoinUsForm.controls['Email'].hasError('required')
                         ">
-                        DateOfBirth est non valide
-                      </mat-error>
-                    </mat-form-field>
+              Email est non valide"
+            </mat-error>
+          </mat-form-field>
 
-                    <mat-form-field class="full-width" appearance="fill">
-                      <mat-label> Email</mat-label>
-                      <input formControlName="Email" matInput placeholder="Email"  type="text" />
-                      <mat-error *ngIf="addForm.controls['Email'].hasError('required')">
-                        Email est obligatoire
-                      </mat-error>
-                      <mat-error *ngIf="
-                          addForm.controls['Email'].hasError('pattern') &&
-                          !addForm.controls['Email'].hasError('required')
-                        ">
-                        Email est non valide"
-                      </mat-error>
-                    </mat-form-field>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input formControlName="phone" matInput placeholder="+216 23 456 711 " type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['phone'].hasError('required')">
+              Phone Number is required
+            </mat-error>
+            <mat-error
+              *ngIf="
+                JoinUsForm.controls['phone'].hasError('pattern') &&
+                !JoinUsForm.controls['phone'].hasError('required')
+              "
+            >
+              Phone Number is not valid
+            </mat-error>
+          </mat-form-field>
+          
+          
+          
 
-                    <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> Phone Number</mat-label>
-                        <input formControlName="phone" matInput placeholder="phone"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            Phone Number est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['phone'].hasError('pattern') &&
-                            !addForm.controls['phone'].hasError('required')
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label> education</mat-label>
+            <input formControlName="education" matInput placeholder="education" type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['phone'].hasError('required')">
+              education est obligatoire
+            </mat-error>
+            <mat-error *ngIf="
+                            JoinUsForm.controls['education'].hasError('pattern') &&
+                            !JoinUsForm.controls['education'].hasError('required')
                           ">
-                          Phone Number est non valide"
-                        </mat-error>
-                      </mat-form-field>
+              education est non valide"
+            </mat-error>
+          </mat-form-field>
 
-                      <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> education</mat-label>
-                        <input formControlName="education" matInput placeholder="education"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            education est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['education'].hasError('pattern') &&
-                            !addForm.controls['education'].hasError('required')
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label> Profession Occupation</mat-label>
+            <input formControlName="ProfOccupation" matInput placeholder="Profession Occupation" type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['phone'].hasError('required')">
+              Profession est obligatoire
+            </mat-error>
+            <mat-error *ngIf="
+                            JoinUsForm.controls['ProfOccupation'].hasError('pattern') &&
+                            !JoinUsForm.controls['ProfOccupation'].hasError('required')
                           ">
-                          education est non valide"
-                        </mat-error>
-                      </mat-form-field>
+              Profession est non valide"
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label>How did you hear about JCI</mat-label>
+            <mat-select formControlName="How" placeholder="Select an option">
+              <mat-option value="Social Media">Social Media</mat-option>
+              <mat-option value="option2">Referral</mat-option>
+              <mat-option value="option3">Event</mat-option>
+              <mat-option value="option3">Other</mat-option>
+            </mat-select>
+            <mat-error *ngIf="JoinUsForm.controls['How'].hasError('required')">
+              How is required
+            </mat-error>
+            <mat-error *ngIf="
+              JoinUsForm.controls['How'].hasError('pattern') &&
+              !JoinUsForm.controls['How'].hasError('required')
+            ">
+              How is not valid
+            </mat-error>
+          </mat-form-field>
+          
 
-                      <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> Profession Occupation</mat-label>
-                        <input formControlName="ProfOccupation" matInput placeholder="Profession Occupation"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            Profession est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['ProfOccupation'].hasError('pattern') &&
-                            !addForm.controls['ProfOccupation'].hasError('required')
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label> Why atre you intersted</mat-label>
+            <input formControlName="Why" matInput placeholder="Why atre you intersted in joining JCI ?" type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['phone'].hasError('required')">
+              Why est obligatoire
+            </mat-error>
+            <mat-error *ngIf="
+                            JoinUsForm.controls['Why'].hasError('pattern') &&
+                            !JoinUsForm.controls['Why'].hasError('required')
                           ">
-                          Profession est non valide"
-                        </mat-error>
-                      </mat-form-field>
+              Why est non valide"
+            </mat-error>
+          </mat-form-field>
 
-                      <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> How did You here about JCI</mat-label>
-                        <input formControlName="How" matInput placeholder="How did You here about JCI"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            How est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['How'].hasError('pattern') &&
-                            !addForm.controls['How'].hasError('required')
+          <mat-form-field class="full-width" appearance="fill">
+            <mat-label> Interisting</mat-label>
+            <input formControlName="Interisting" matInput
+              placeholder="Are you interestedin taking a leadership role within JCI ? ?" type="text" />
+            <mat-error *ngIf="JoinUsForm.controls['phone'].hasError('required')">
+              Why est obligatoire
+            </mat-error>
+            <mat-error *ngIf="
+                            JoinUsForm.controls['Interisting'].hasError('pattern') &&
+                            !JoinUsForm.controls['Interisting'].hasError('required')
                           ">
-                          How est non valide"
-                        </mat-error>
-                      </mat-form-field>
+              Why est non valide"
+            </mat-error>
+          </mat-form-field>
+        </form>
+      </div>
 
-                      <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> Why atre you intersted</mat-label>
-                        <input formControlName="Why" matInput placeholder="Why atre you intersted in joining JCI ?"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            Why est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['Why'].hasError('pattern') &&
-                            !addForm.controls['Why'].hasError('required')
-                          ">
-                          Why est non valide"
-                        </mat-error>
-                      </mat-form-field>
+      <div class="submit">
+        <button>SUBMIT</button>
+      </div>
 
-                      <mat-form-field class="full-width" appearance="fill">
-                        <mat-label> Interisting</mat-label>
-                        <input formControlName="Interisting" matInput placeholder="Are you interestedin taking a leadership role within JCI ? ?"  type="text" />
-                        <mat-error *ngIf="addForm.controls['phone'].hasError('required')">
-                            Why est obligatoire
-                        </mat-error>
-                        <mat-error *ngIf="
-                            addForm.controls['Interisting'].hasError('pattern') &&
-                            !addForm.controls['Interisting'].hasError('required')
-                          ">
-                          Why est non valide"
-                        </mat-error>
-                      </mat-form-field>
-                  </form>
-            </div>
-
-            <div class="submit">
-                <button>SuBMIT</button>
-            </div>
-            
-        </div>
     </div>
    
+  </div>
+
+</section >
+
+<section class="dev">
+  <div class="devloppment">
+    <img  src="assets/images/developing.png" alt="Team Image">
+  </div>
 </section>
 <app-footer></app-footer>

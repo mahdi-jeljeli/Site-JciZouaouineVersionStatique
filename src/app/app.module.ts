@@ -18,6 +18,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { JoinusComponent } from './joinus/joinus.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 
@@ -49,6 +53,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     // NoopAnimationsModule,
     ReactiveFormsModule, 
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
 
     
   ],

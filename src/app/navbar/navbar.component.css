@@ -95,7 +95,6 @@ header .head nav{
     position: relative;
 }
 header .head nav ul li {
-    
    cursor: pointer;
 }
 
@@ -118,7 +117,8 @@ header nav ul li a{
     text-decoration:none;
     padding: 40px 10px;
     transition: 0.3s;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 300;
     color:#EDBE38;
     position: relative;
     z-index: 1;
@@ -126,12 +126,29 @@ header nav ul li a{
 header nav ul li a.active{
     color: #19c8fa;
 }
-header nav ul li a:hover{
-    border-bottom:2px solid #19c8fa;
-    
-}
+header nav ul li a::before{
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   height: 2px;
+   width: 0;
+   background-color: #4070f4;
+   border-radius: 50px;
+   transition: width 0.3s ease;
 
-header  nav mat-form-field{
+}
+header nav ul li a:hover::before{
+
+    width: 100%;
+
+ 
+ }
+.d-flex{
+
+margin-bottom: 50px;
+margin-right: 20px;
+}
+/* header  nav mat-form-field{
     bottom: 25px;
 
     border-radius: 5px;
@@ -148,12 +165,9 @@ header  nav mat-form-field mat-icon {
     position: absolute;
     top : 10px;
     left:10rem
-}
+} */
 
-.navbar-toggler{
-    background-color: #EDBE38;
-    
-}
+
 @media (max-width : 768px){
     header  nav .form{
         bottom: 0;
@@ -175,5 +189,23 @@ img{
 }
 span{
     color:dodgerblue
+}
+.navbar-toggler{
+    background-color: #EDBE38;
+    
+}
+.navbar{
+    background-color: #0A0F29;
+}
+.offcanvas-body{
+    background-color: #0A0F29;
+}
+.offcanvas-body .nav-item a{
+    color:#EDBE38;
+
+}
+.offcanvas-body .nav-item a.active{
+    color:#19c8fa;
+
 }
 /* start header small ecran*/

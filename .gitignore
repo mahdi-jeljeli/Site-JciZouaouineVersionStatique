@@ -40,3 +40,14 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignorer les fichiers temporaires
+*.tmp
+
+# Ignorer les fichiers log
+*.log
+
+# Ignorer le dossier build
+/build/
+# Ignorer le dossier json
+*.json

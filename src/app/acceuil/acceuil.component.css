@@ -28,18 +28,26 @@
 }
 
 .more .btn-more .read-more {
-    width: 100;
+
     padding: 5px 20px;
     background-color: white;
     border-color: #3A67B1;
     color: #3A67B1;
+    box-shadow: 0 0 5px #3A67B1; /* Suppression de la virgule en trop */
     border-radius: 20px;
     margin-right: 50px;
     margin-top: 20px;
 }
+
 .more .btn-more .read-more:hover {
-    background-color: #b5c6e2;
+    box-shadow: 
+        0 0 5px #3A67B1,
+        0 0 25px #3A67B1,
+        0 0 50px #3A67B1,
+        0 0 100px #3A67B1,
+        0 0 200px #3A67B1; /* Correction de la virgule en trop et ajout de "#" après "c" dans la couleur */
 }
+
 .nousomme .team {
     position: absolute;
     width: 100%;

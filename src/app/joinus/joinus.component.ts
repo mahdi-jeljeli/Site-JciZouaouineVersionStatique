@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-joinus',
@@ -11,11 +12,11 @@ export class JoinusComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
   ) { }
-  addForm: FormGroup = this.fb.group({
+  JoinUsForm: FormGroup = this.fb.group({
     FirsLastName: ['', [Validators.required]],
     DateOfBirth: ['',],
     Email: ['', [Validators.required, Validators.email]],
-    phone: ['', [Validators.required]],
+    phone: ['', [Validators.required, Validators.pattern(/^[0-9]{8,}$/)]],
     education: ['', [Validators.required]],
     ProfOccupation: [''],
     How: ['', [Validators.required]],
@@ -23,6 +24,11 @@ export class JoinusComponent implements OnInit {
     Interisting: ['', [Validators.required]],
 
   });
+
+  onDateChange(event: MatDatepickerInputEvent<Date>): void {
+    // Handle date changes if needed
+  }
+
   ngOnInit(): void {
   }
 
