@@ -1,0 +1,5 @@
+<div class="parent-container">
+  <div class="result" *ngFor="let result of getResults()">
+    <a [routerLink]="result.link" (click)="onSelectResult()">{{ result.title }}</a>
+  </div>
+</div>

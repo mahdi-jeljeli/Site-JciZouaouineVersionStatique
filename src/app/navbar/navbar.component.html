@@ -6,32 +6,34 @@
     </a>
     <nav>
       <ul>
-        <li><a routerLink="/Acceuil" [routerLinkActive]="'active'"> HOME</a></li>
-        <li><a routerLink="/about" [routerLinkActive]="'active'">About Us</a></li>
-        <li><a routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS</a></li>
-        <li><a  routerLink="/joinus" [routerLinkActive]="'active'">JOIN-US</a></li>
-
-        <!-- <li class="nav-item">
-                <a class="dropdown-toggle" href="#" role="button" onclick="toggleDropdown('dropdown-menu')">
-                  JOIN uS
-                </a>
-                <ul class="dropdownmenu" id="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> -->
-
-
+        <li><a routerLink="/portfelio" [routerLinkActive]="'active'">portfelio<span class="tooltiptext">JOIN-US</span></a>
+        </li>
+        <li><a routerLink="/Acceuil" [routerLinkActive]="'active'"> HOME <span class="tooltiptext">HOME</span></a></li>
+        <li><a routerLink="/about" [routerLinkActive]="'active'">About Us <span class="tooltiptext">About Us</span></a>
+        </li>
+        <li><a routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS <span class="tooltiptext">NOS
+              ACTIONS</span></a></li>
+        <li><a routerLink="/joinus" [routerLinkActive]="'active'">JOIN-US<span class="tooltiptext">JOIN-US</span></a>
+        </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success" type="submit">Search</button>
+      <form class="recherceh d-flex" role="search" (ngSubmit)="onSearch()">
+        <div class="recherchebar">
+          
+            <input matInput type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery" name="searchQuery">
+            
+      
+          <!-- Utilisation de [disabled] pour désactiver le bouton si searchQuery est vide -->
+          <button mat-button class="mat-raised-button mat-primary" type="submit" [disabled]="!searchQuery">Search</button>
+        </div>
       </form>
+      
     </nav>
   </div>
 </header>
+<div >
+  <app-search-results> </app-search-results>
+</div>
+
 <!-- end header large ecran -->
 
 
@@ -56,13 +58,13 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page"  routerLink="/Acceuil" [routerLinkActive]="'active'">HOME</a>
+            <a class="nav-link" aria-current="page" routerLink="/Acceuil" [routerLinkActive]="'active'">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/about" [routerLinkActive]="'active'">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS</a>
+            <a class="nav-link" routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/joinus" [routerLinkActive]="'active'">JOIN-US</a>

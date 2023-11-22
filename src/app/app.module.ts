@@ -21,6 +21,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -39,6 +43,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     FooterComponent,
     ContactUsComponent,
     JoinusComponent,
+    SearchResultsComponent,
+
   
   
   ],
@@ -55,7 +61,9 @@ import { MatNativeDateModule } from '@angular/material/core';
     ReactiveFormsModule, 
     MatSelectModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FormsModule,
+    HttpClientModule
 
     
   ],

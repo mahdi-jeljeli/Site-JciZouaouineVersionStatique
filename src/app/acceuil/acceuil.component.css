@@ -1,89 +1,89 @@
-/*start qui somme nous */
+
+/* start qui nous somme  */
 .nousomme {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    width: 50%;
-    left: 5px;
-    top: 40px;
-    padding: 10px;
-
-}
-
-.nousomme .titre h1 span {
-    font-weight: bolder;
-    display: block;
-    font-size: 70px;
-}
-
-.nousomme .paragraphe p {
-    color: #444;
-    font-weight: 300;
-    line-height: 1.6;
-    display: block;
-}
-
-.more {
-    display: flex;
-}
-
-.more .btn-more .read-more {
-
-    padding: 5px 20px;
-    background-color: white;
-    border-color: #3A67B1;
-    color: #3A67B1;
-    box-shadow: 0 0 5px #3A67B1; /* Suppression de la virgule en trop */
-    border-radius: 20px;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.more .btn-more .read-more:hover {
-    box-shadow: 
-        0 0 5px #3A67B1,
-        0 0 25px #3A67B1,
-        0 0 50px #3A67B1,
-        0 0 100px #3A67B1,
-        0 0 200px #3A67B1; /* Correction de la virgule en trop et ajout de "#" après "c" dans la couleur */
-}
-
-.nousomme .team {
-    position: absolute;
     width: 100%;
-    height: 100%;
-    margin-left: 100%;
-    align-items: center;
-    justify-content: center;
-    top: 50px
-}
-
-.nousomme .team img {
-    width: 90%;
-    height: 90%;
-}
-
-@media(max-width: 840px) {
-
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
    
-
-}
-
-
-
-
-/*meduim*/
-@media(min-width: 992px) {
-    .head {
-        width: 970px;
+   }
+   .nousomme .conteneur{
+     width: 100%;
+     margin-left: 20px;
     }
-
-}
-
-
-
-/*end qui somme nous */
-
+    .nousomme .conteneur .qui-nous  {
+     width: 100%;
+   }
+   .nousomme .conteneur .qui-nous h1 span {
+     font-weight: bolder;
+     display: block;
+     font-size: 70px;
+   }
+   .nousomme .qui-nous  .paragraphe p {
+     color: #444;
+     text-align: justify;
+     font-weight: 300;
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 1.6;
+     display: block;
+   }
+   
+   .more {
+     display: flex;
+   }
+   
+   .more .btn-more .read-more {
+   
+     padding: 5px 20px;
+     background-color: white;
+     border-color: #3A67B1;
+     color: #3A67B1;
+     box-shadow: 0 0 5px #3A67B1; 
+     border-radius: 20px;
+     margin-right: 50px;
+     margin-top: 20px;
+   }
+   
+   .more .btn-more .read-more:hover {
+     box-shadow: 
+         0 0 5px #3A67B1,
+         0 0 25px #3A67B1,
+         0 0 50px #3A67B1,
+         0 0 100px #3A67B1,
+         0 0 200px #3A67B1; 
+   }
+   
+    .nousomme .team{
+     width: 100%;
+   
+    }
+    .nousomme .team img{
+     width: 90%;
+     margin-top: -50px;
+   
+    
+    }
+   
+    @media(max-width : 768px ){
+     .nousomme {
+       display: block;
+      }
+      .nousomme .conteneur .qui-nous  .paragraphe {
+      margin-right: 60px;
+      }
+      .nousomme .team img{
+       margin-top: -50pxpx;
+      }
+    }
+    @media(max-width : 968px ){
+     
+     .nousomme .team img{
+       margin-top: 100px;
+      }
+    }
+   
+ /* end qui nous somme  */
+   
 /* start why jci  */
 .Why {
     padding-top: 60px;
@@ -268,6 +268,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .icon {
@@ -282,16 +283,16 @@
     margin-bottom: 50px;
     margin-top: 50px;
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     border-radius: 20px;
-}
-
+} 
+#more {display: none;}
 .card .card-body .logocard img {
     width: 50px;
     height: 50px;
 }
 
-.card .card-body .titre {
+.card .card-body .conteneur {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 300;
@@ -305,13 +306,35 @@
     line-height: 1.6;
 }
 
-.card .card-body .btn-resd-more button {
+.card .card-body .text span{
+    text-align: justify;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: block;
+}
+.card .card-body .text span .creado{
+   
+    display: block;
+}
+
+.card .card-body .btn-resd-more  button {
     padding: 5px 20px;
     background-color: white;
     border-color: #EDBE38;
     border-radius: 20px;
     font-weight: bolder;
     color: #EDBE38;
+    margin-top: 60px;
+}
+.card .card-body .btn-resd-more  .read-more-creado {
+    padding: 5px 20px;
+    background-color: white;
+    border-color: #EDBE38;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #EDBE38;
+    margin-top: 75px;
 }
 .card .card-body .btn-resd-more button:hover {
     background-color: #f1ebd8;
@@ -414,25 +437,8 @@
 
 /*small*/
 @media(max-width: 768px) {
-    .nousomme .titre h1 span {
-        font-size: 50px;
-    }
-
-    .nousomme .team {
-        display: none;
-        width: 10px;
-        height: 10px;
-    }
-
-    .more .read-more {
-        width: 150px;
-
-    }
-
-    .more .contact-us {
-        width: 150px;
-    }
-
+    
+    
     .cont .founders {
         position: relative;
         margin-top: 0px;
@@ -575,15 +581,4 @@
     }
 
     /* ############################################################### */
-}
-
-/*large*/
-@media(min-width: 1200px) {
-    .head {
-        width: inherit;
-    }
-
-    .navbar {
-        display: none;
-    }
 }

@@ -1,6 +1,200 @@
-.hello{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    margin-bottom: 300px;
+section {
+  width: 100%;
+  background: linear-gradient(to bottom, #EDBE38, #0097D7);
+  padding-bottom: 100px;
+}
+
+.conteneur {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourProject {
+  margin-left: 10%;
+  margin-top: -200px;
+  width: 100%;
+
+}
+
+.ourProject .text {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.ourProject .topbar {
+  font-weight: bolder;
+  display: block;
+  font-size: 70px;
+  border-top: 0.3cm solid purple;
+  margin-right: calc((100% - 3cm) - 10px);
+
+}
+
+.ourProject h1 {
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  font-size: 70px;
+
+}
+
+.ourProject h1 span {
+  display: block;
+
+}
+
+.ourProject .text .title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.ourProject .text .title h2 {
+  position: relative;
+  font-weight: bolder;
+  display: block;
+  font-size: 50px;
+}
+
+.ourProject .text .title .cercle {
+  width: 100px;
+  /* Ajustez la taille du cercle selon vos besoins */
+  height: 100px;
+  /* Assurez-vous que width et height soient égaux pour un cercle */
+  border: 20px solid #0097D7;
+  /* Épaisseur et couleur du contour du cercle */
+  border-radius: 50%;
+  /* Bordure pour rendre le div circulaire */
+  position: absolute;
+  margin-top: -4%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+
+}
+
+.ourProject .text span {
+  width: 100%;
+  font-size: 30px;
+  display: block;
+}
+
+
+
+/* start tote les images */
+.tout-images {
+  width: 100%;
+}
+
+.container {
+  box-sizing: border-box;
+
+  width: 50%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  margin-top: 100px;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media(max-width : 768px) {
+  .conteneur {
+    display: block;
+    overflow: hidden;
+  }
+  .conteneur .image {
+    width: 100%;
+  }
+  .conteneur .image img{
+    width: 100%;
+  }
+  .ourProject {
+    margin-left: 10%;
+    margin-top: 60px;
+    width: 100%;
+  
+  }
+  .ourProject .text .title .cercle {
+  display: none;
+  
+  }
+
 }

@@ -1,9 +1,106 @@
-
 <app-navbar></app-navbar>
-<DIV class="hello">
-    <h1>WELCOME TO NO ACTION </h1>
-</DIV>
+<section>
+    <div class="conteneur">
+        <div>
+            <!-- <div class="topbar"></div>
+            <h1>OUR PROJECTS</h1> -->
+        </div>
+        <div class="image">
+            <img src="assets/images/teamwork1.png" alt="team image">
+        </div>
+    </div>
+    <div class="ourProject">
+        <div>
+            <div class="topbar"></div>
+            <h1> <span>OUR PROJECTS</span></h1>
+        </div>
+        <div class="text">
+            <div class="title">
+                <h2>Last Project</h2>
+                <div class="cercle"></div>
+            </div>
+            <div class="sous-text">
+                <span>Junior Chamber International (JCI) is an international organization that</span>
+                <span>provides young people</span>
+                <span> with opportunities for personal and professional development,</span>
+                <span> leadership training, and community engagement</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="tout-images">
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+            <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="assets/images/proj4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="assets/images/proj3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="assets/images/team-jci.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="assets/images/proj4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="assets/images/proj1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="assets/images/proj2.jpg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+            <a class="next" (click)="plusSlides(1)">&#10095;</a>
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/proj4.jpg" style="width:100%" (click)="currentSlide(1)"
+                        alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/proj3.jpg" style="width:100%" (click)="currentSlide(2)"
+                        alt="Cinque Terre">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/team-jci.jpg" style="width:100%"
+                        (click)="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/proj4.jpg" style="width:100%" (click)="currentSlide(4)"
+                        alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/proj1.jpg" style="width:100%" (click)="currentSlide(5)"
+                        alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="assets/images/proj2.jpg" style="width:100%" (click)="currentSlide(6)"
+                        alt="Snowy Mountains">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <app-footer></app-footer>
-
-
-

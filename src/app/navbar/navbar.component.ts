@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { SearchService } from '../Services/search.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +13,11 @@ export class NavbarComponent implements OnInit {
   @ViewChild('contactUsFooter')
   contactUsFooter!: ElementRef;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private router: Router,
+    private searchService: SearchService,
+    private cdr: ChangeDetectorRef,
+  ) { }
 
   toggleDropdown(menuId: string): void {
     var menu = document.getElementById(menuId) as HTMLUListElement;
@@ -20,17 +26,16 @@ export class NavbarComponent implements OnInit {
     }
   }
   ngOnInit(): void {
+    this.cdr.detectChanges();
   }
   ngAfterViewInit() {
-    // Now it's safe to access this.contactUsFooter
-    this.scrollToContactUs();
-}
 
-  
-  scrollToContactUs() {
-    if (this.contactUsFooter) {
-        const footerElement = this.contactUsFooter.nativeElement;
-        this.renderer.setProperty(document.documentElement, 'scrollTop', footerElement.offsetTop);
-    }
-}
+  }
+ 
+  searchQuery: string = ''; // Variable pour stocker la valeur du champ de recherche
+
+  onSearch(): void {
+    this.searchService.search(this.searchQuery);
+    this.cdr.detectChanges();
+  }
 }

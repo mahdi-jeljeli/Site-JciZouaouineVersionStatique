@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<section class="head">
+<section class="conteneur-parent">
   <div class="conteneur">
     <div class="logo">
       <img width="200px" src="assets/images/ZouaouineLogoBleu.png" alt="logo">
@@ -160,7 +160,7 @@
       </div>
 
       <div class="submit">
-        <button>SUBMIT</button>
+        <button mat-raised-button class="button_valid" (click)="onSubmit()">SUBMIT</button>
       </div>
 
     </div>
@@ -168,10 +168,10 @@
   </div>
 
 </section >
-
 <section class="dev">
   <div class="devloppment">
     <img  src="assets/images/developing.png" alt="Team Image">
   </div>
 </section>
+
 <app-footer></app-footer>

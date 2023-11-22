@@ -1,5 +1,8 @@
-.hello{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+/* start cards */
+
+.div{
+    margin-bottom: 300px;
+    background-color: red;
 }
+
+#more {display: none;}
