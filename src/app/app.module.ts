@@ -24,7 +24,16 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { QuiSommeNousForAcceuilComponent } from './SousComponent/qui-somme-nous-for-acceuil/qui-somme-nous-for-acceuil.component';
+import { WhyJciForAcceuilComponent } from './SousComponent/why-jci-for-acceuil/why-jci-for-acceuil.component';
+import { CardsForAcceuilComponent } from './SousComponent/cards-for-acceuil/cards-for-acceuil.component';
+import { FoundationForAcceuilComponent } from './SousComponent/foundation-for-acceuil/foundation-for-acceuil.component';
+import { OURProjectforAcceuilComponent } from './SousComponent/ourprojectfor-acceuil/ourprojectfor-acceuil.component';
+import { MatCardModule } from '@angular/material/card';
+import { ActionComponent } from './SousComponent/action/action.component';
+import { AlbomPhotosComponent } from './SousComponent/albom-photos/albom-photos.component';
+import { AllActionComponent } from './SousComponent/all-action/all-action.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 
 
@@ -44,6 +53,14 @@ import { HttpClientModule } from '@angular/common/http';
     ContactUsComponent,
     JoinusComponent,
     SearchResultsComponent,
+    QuiSommeNousForAcceuilComponent,
+    WhyJciForAcceuilComponent,
+    CardsForAcceuilComponent,
+    FoundationForAcceuilComponent,
+    OURProjectforAcceuilComponent,
+    ActionComponent,
+    AlbomPhotosComponent,
+    AllActionComponent,
 
   
   
@@ -63,7 +80,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    LightboxModule,
+
 
     
   ],

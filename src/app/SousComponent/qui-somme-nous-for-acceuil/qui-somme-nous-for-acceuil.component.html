@@ -1,0 +1,47 @@
+<section>
+    <div class="nousomme">
+        <div class="conteneur">
+            <div class="qui-nous">
+                <h1>
+                    <span>QUI SOMMES</span>
+                    <span>NOUS ??</span>
+                </h1>
+                <div class="paragraphe">
+                    <p>
+                        <span>La Jeune Chambre Internationale est un mouvement de jeunes entrepreneurs</span>
+                        <span>La Jeune Chambre Internationale est un mouvement de jeunes entrepreneurs </span>
+                        <span>de 18 à 40 ans. La Jeune Chambre Internationale est un mouvement de jeunes</span>
+                        <span> entrepreneurs de 18 à 40 ans. Notre section liégeoise s’intègre dans un </span>
+                        <span>réseau mondial structuré présent dans près de 200 pays et regroupant </span>
+                        <span>au total 200.000 citoyens actifs.</span>
+                        <span *ngIf="showMoreONQuiSommeNous">
+                            erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                            eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum
+                            nisi,
+                            sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+                            turpis.
+                            <!-- Le reste de votre contenu ici -->
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- <button (click)="scrollToOurProject()">Scroll to Our Project</button> -->
+
+            <div class="more">
+                <div class="btn-more">
+                    <div>
+                        <button class="read-more" (click)="toggleReadMoreForQuiSommeNous()">
+                            {{ showMoreONQuiSommeNous ? 'Read less' : 'Read more' }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <img src="assets/images/team.png" alt="Team Image">
+        </div>
+    </div>
+</section>
+

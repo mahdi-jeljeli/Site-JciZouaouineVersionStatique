@@ -1,0 +1,91 @@
+/* start our poject  */
+.notre-projet .prigect {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+    width: 100%;
+
+}
+
+.notre-projet .prigect .ouer-project .title {
+    margin-left: 30px;
+    position: relative;
+    border-top: 0.3cm solid purple;
+    margin-right: calc((100% - 3cm) - 10px);
+    padding-top: 10px;
+
+}
+
+.notre-projet .prigect .ouer-project .paragraphe {
+    margin-left: 30px;
+    position: relative;
+
+}
+
+.notre-projet .prigect .ouer-project .paragraphe span {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    /* Algerian font or your preferred font */
+    font-size: 11px;
+    font-size: 20px;
+    line-height: 1.5;
+    /* Adjust the line height as needed */
+}
+
+.notre-projet .prigect .ouer-project .btn-our-project {
+    margin-left: 20px;
+}
+
+.notre-projet .prigect .ouer-project .btn-our-project button {
+    padding: 5px 20px;
+    background-color: white;
+    border-color: #EDBE38;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #EDBE38;
+}
+
+.notre-projet .prigect .ouer-project .btn-our-project button:hover {
+    background-color: #f1ebd8;
+}
+
+.notre-projet .prigect .photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.notre-projet .prigect .photos .imgs {
+    flex: 0 0 calc(50% - 20px);
+    margin: 5px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.notre-projet .prigect .photos .imgs img {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.devloppment {
+    width: 100%;
+    overflow: hidden;
+}
+
+.devloppment img {
+    width: 100%;
+    height: auto;
+    margin-left: 40px;
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .devloppment img {
+        margin-left: 0px;
+
+    }
+}
+
+/* end our poject  */

@@ -1,0 +1,59 @@
+/* start fouder prespective */
+.cont .founders {
+    position: relative;
+    /* margin-top: -150px; */
+}
+
+.cont .founders .content {
+    text-align: center;
+   
+}
+
+.cont .founders .content .top-bar{
+    /* position: absolute; */
+    position:relative;
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: #3A67B1
+    ;
+    height: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cont .founders .content .title {
+    margin-top: 20px;
+}
+
+.cont .founders .content .text {
+    margin-top: 20px;
+    /* Adjust this value as needed */
+}
+
+
+.cont .founders .content .text span {
+    display: block;
+}
+
+/*small*/
+@media(max-width: 768px) {
+    
+    
+    .cont .founders {
+        position: relative;
+        margin-top: 0px;
+    } 
+}
+
+
+/*meduim*/
+@media(max-width: 900px) {
+
+    .cont .founders {
+        position: relative;
+        margin-top: 200px;
+    }
+}
+
+/* end fouder prespective */
+

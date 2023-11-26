@@ -1,0 +1,125 @@
+.conteneur {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0;
+  background: linear-gradient(to bottom, #EDBE38, #fff);
+}
+
+.conteneur .action {
+  width: 70%;
+}
+
+.conteneur .action .title {
+  width: 100%;
+  position: relative;
+}
+
+.conteneur .action .title h1 {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+.conteneur .action .soustitle {
+  width: 100%;
+  position: relative;
+}
+
+.conteneur .action .soustitle h4 {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.conteneur .action .description {
+  width: 100%;
+  position: relative;
+}
+
+.conteneur .action .description p {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.conteneur .histprique {
+  width: 30%;
+  display: block;
+  border-left: 2px solid #fff;
+  max-height: 1350px;
+  overflow: scroll;
+
+}
+
+.conteneur .histprique .title {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.conteneur .histprique .conteneur {
+  width: 100%;
+}
+
+.conteneur .histprique .cartes {
+  width: 90%;
+  margin-left: 20px
+}
+
+.carte_content {
+  width: 100%;
+}
+
+.carte_content .text {
+  font-weight: bolder;
+}
+
+.carte_content img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.carte_content_btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.carte_content_btn a {
+  text-decoration: none;
+  color: #555;
+}
+
+.carte_content_btn a:hover {
+  color: blue;
+}
+
+.imageGalerie {
+  width: 100%;
+}
+
+.imageGalerie .conteneur {
+  width: 100%;
+  display: inline-flex;
+  margin-top: 30px;
+}
+
+.imageGalerie .conteneur {
+  width: 230px;
+  min-height: 230px;
+  max-height: 230px;
+  margin-left: 20px;
+}
+
+.imageGalerie .conteneur img {
+  width: 230px;
+  min-height: 230px;
+  max-height: 230px;
+  filter: grayscale(100%);
+  transition: 1s;
+  cursor: pointer;
+
+}
+
+.imageGalerie .conteneur img:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}

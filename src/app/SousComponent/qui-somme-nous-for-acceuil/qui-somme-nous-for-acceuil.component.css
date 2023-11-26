@@ -1,0 +1,222 @@
+/* start qui nous somme  */
+.nousomme {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+   
+   }
+   .nousomme .conteneur{
+     width: 100%;
+     margin-left: 20px;
+    }
+    .nousomme .conteneur .qui-nous  {
+     width: 100%;
+   }
+   .nousomme .conteneur .qui-nous h1 span {
+     font-weight: bolder;
+     display: block;
+     font-size: 70px;
+   }
+   .nousomme .qui-nous  .paragraphe p {
+     color: #444;
+     text-align: justify;
+     font-weight: 300;
+     font-family: Arial, Helvetica, sans-serif;
+     line-height: 1.6;
+     display: block;
+   }
+   
+   .more {
+     display: flex;
+   }
+   
+   .more .btn-more .read-more {
+   
+     padding: 5px 20px;
+     background-color: white;
+     border-color: #3A67B1;
+     color: #3A67B1;
+     box-shadow: 0 0 5px #3A67B1; 
+     border-radius: 20px;
+     margin-right: 50px;
+     margin-top: 20px;
+   }
+   
+   .more .btn-more .read-more:hover {
+     box-shadow: 
+         0 0 5px #3A67B1,
+         0 0 25px #3A67B1,
+         0 0 50px #3A67B1,
+         0 0 100px #3A67B1,
+         0 0 200px #3A67B1; 
+   }
+   
+    .nousomme .team{
+     width: 100%;
+   
+    }
+    .nousomme .team img{
+     width: 90%;
+     margin-top: -50px;
+   
+    
+    }
+   
+    @media(max-width : 768px ){
+     .nousomme {
+       display: block;
+      }
+      .nousomme .conteneur .qui-nous  .paragraphe {
+      margin-right: 60px;
+      }
+      .nousomme .team img{
+       margin-top: -50pxpx;
+      }
+    }
+    @media(max-width : 968px ){
+     
+     .nousomme .team img{
+       margin-top: 100px;
+      }
+    }
+   
+ /* end qui nous somme  */
+   
+/* start why jci  */
+.Why {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+}
+
+.Why .contain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.Why .contain .why-jci {
+    width: 100%;
+    height: 300px;
+    margin-right: 100%;
+    margin-left: 10px;
+    border-radius: 0% 50% 50% 0%;
+    background-color: #56BDA3;
+}
+
+.Why .contain .why-jci .title {
+    margin-top: 40px;
+    margin-left: 30px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Why .contain .why-jci .text {
+    margin-top: 10px;
+    margin-left: 90px;
+    padding: 0 10px;
+}
+
+.Why .contain .why-jci .text span {
+    color: #fff;
+    display: block;
+}
+
+.Why .contain .why-jci .btn-why-jci {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.Why .contain .why-jci .btn-why-jci button {
+    padding: 5px 20px;
+    background-color: white;
+    border-color: #EDBE38;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #EDBE38;
+}
+.Why .contain .why-jci .btn-why-jci button:hover {
+    background-color: #f1ebd8;
+
+}
+
+.Why .contain .jci-logo {
+    width: 100%;
+    display: flex;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Why .contain .jci-logo .logo {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.Why .contain .jci-logo .logo img {
+    display: block;
+    margin-top: -120px;
+    width: 700px;
+    height: 700px;
+}
+
+.Why .contain .joinus {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-left: 100%;
+    border-radius: 50% 0% 0% 50%;
+    background-color: #56BDA3;
+}
+
+.joinus .text {
+    margin-top: 50px;
+    margin-left: 60px;
+    display: block;
+    position: relative;
+
+}
+
+.joinus .text span {
+    display: block;
+    font-family: 'Monotype Corsiva', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.joinus .text .kenedy {
+    margin-left: 100px;
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.joinus .btn-joinus {
+
+    margin-left: 100px;
+    margin-top: 20px;
+
+}
+
+.joinus .btn-joinus button {
+
+    padding: 5px 20px;
+    background-color: white;
+    border-color: #EDBE38;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: #EDBE38;
+
+}
+.joinus .btn-joinus button:hover {
+    background-color: #f1ebd8;
+
+}
+
+
+
+/*end qui somme nous */

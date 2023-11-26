@@ -11,7 +11,7 @@ export class SearchService {
     { title: 'Join Us', link: "/joinus", routerLinkActive: "'active'" },
     { title: 'About Us', link: '/about' , routerLinkActive: "'active'" },
     { title: 'Nos action', link: '/NOSACTIONS' , routerLinkActive: "'active'" },
-    
+    { title: 'project', link: '/NOSACTIONS' , routerLinkActive: "'active'" },
   ];
   
   

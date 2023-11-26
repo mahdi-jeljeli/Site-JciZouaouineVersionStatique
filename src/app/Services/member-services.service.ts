@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
-
-
 import { environment } from 'src/environments/environment';
 import { EmailRequest } from '../Models/EmailRequest';
 
@@ -17,6 +15,6 @@ export class MemberServicesService {
   constructor(private http: HttpClient) { }
 
   EmailRequestForJoinUs(_EmailRequest : EmailRequest): Observable<any> {
-    return this.http.post<EmailRequest>(`${this.apiUrl}/api/JoinUS/send`,_EmailRequest)
+    return this.http.post<EmailRequest>(`${this.apiUrl}/api/MailRequest/send`,_EmailRequest)
 }
 }
