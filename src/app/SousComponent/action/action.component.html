@@ -1,4 +1,9 @@
 <div class="conteneur" *ngFor="let data of action">
+    <div class="retour">
+        <button mat-icon-button [routerLink]="'/NOSACTIONS'">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </div>      
     <div class="action">
         <div class="title">
             <h1>{{ data.titre }}</h1>
@@ -9,17 +14,9 @@
         <div class="description">
             <p>{{ data.description }}</p>
         </div>
-        <div class="imageGalerie">
-            <div class="conteneur" *ngFor="let image of images; let i = index">
-              <!-- Utilisez la directive (click) pour déclencher la fonction open -->
-              <a href="{{ image.src }}" (click)="open(i)">
-                <img [src]="image.src" style="width: 100%" alt="{{ image.caption }}">
-              </a>
-            </div>
-          </div>
-
-
+        <app-slide-show-photo-for-one-action></app-slide-show-photo-for-one-action>
     </div>
+  
     <div class="histprique">
         <div class="title">
             <h2>OUR HiSTORIQ</h2>

@@ -5,6 +5,19 @@
   padding: 0 0;
   background: linear-gradient(to bottom, #EDBE38, #fff);
 }
+.retour{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.retour button{
+ background-color: #EDBE38;
+ border: none;
+}
+.retour button:hover{
+ color: blue;
+ }
+ 
 
 .conteneur .action {
   width: 70%;
@@ -92,34 +105,3 @@
   color: blue;
 }
 
-.imageGalerie {
-  width: 100%;
-}
-
-.imageGalerie .conteneur {
-  width: 100%;
-  display: inline-flex;
-  margin-top: 30px;
-}
-
-.imageGalerie .conteneur {
-  width: 230px;
-  min-height: 230px;
-  max-height: 230px;
-  margin-left: 20px;
-}
-
-.imageGalerie .conteneur img {
-  width: 230px;
-  min-height: 230px;
-  max-height: 230px;
-  filter: grayscale(100%);
-  transition: 1s;
-  cursor: pointer;
-
-}
-
-.imageGalerie .conteneur img:hover {
-  filter: grayscale(0);
-  transform: scale(1.1);
-}

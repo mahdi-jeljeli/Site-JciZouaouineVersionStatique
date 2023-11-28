@@ -34,6 +34,7 @@ import { ActionComponent } from './SousComponent/action/action.component';
 import { AlbomPhotosComponent } from './SousComponent/albom-photos/albom-photos.component';
 import { AllActionComponent } from './SousComponent/all-action/all-action.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { SlideShowPhotoForOneActionComponent } from './SousComponent/slide-show-photo-for-one-action/slide-show-photo-for-one-action.component';
 
 
 
@@ -61,6 +62,8 @@ import { LightboxModule } from 'ngx-lightbox';
     ActionComponent,
     AlbomPhotosComponent,
     AllActionComponent,
+    SlideShowPhotoForOneActionComponent,
+ 
 
   
   

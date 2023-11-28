@@ -6,33 +6,47 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfelio.component.css']
 })
 export class PortfelioComponent implements OnInit {
+  private modal: HTMLElement | null;
+  private btn: HTMLElement | null;
+  private span: HTMLElement | null;
 
-  showMore: boolean = false;
+  constructor() {
+    // Initialisation des éléments du DOM
+    this.modal = document.getElementById("myModal") as HTMLElement;
+    this.btn = document.getElementById("myBtn") as HTMLElement;
+    this.span = document.getElementsByClassName("close")[0] as HTMLElement;
+  }
 
   ngOnInit(): void {
-   this.  toggleReadMore()
+    // Configuration des gestionnaires d'événements après l'initialisation du composant
+    if (this.btn) {
+      this.btn.onclick = () => {
+        this.openModal();
+      };
+    }
+
+    if (this.span) {
+      this.span.onclick = () => {
+        this.closeModal();
+      };
+    }
+
+    window.onclick = (event) => {
+      if (this.modal && event.target == this.modal) {
+        this.closeModal();
+      }
+    };
   }
 
-  toggleReadMore() {
-    const dots = document.getElementById("dots");
-    const moreText = document.getElementById("more");
-    const btnText = document.getElementById("myBtn");
-    this.showMore = true;
-    // Vérifier si dots n'est pas null avant d'accéder à ses propriétés
-    if (dots && moreText && btnText) {
-      if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-      
-      } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-      }
+  openModal(): void {
+    if (this.modal) {
+      this.modal.style.display = "block";
     }
   }
-  
-  
 
+  closeModal(): void {
+    if (this.modal) {
+      this.modal.style.display = "none";
+    }
+  }
 }

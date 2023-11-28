@@ -28,6 +28,7 @@ const routes: Routes = [
   { path: 'fouders', component: FoundationForAcceuilComponent},
   { path: 'action/:id',component: ActionComponent , },
   { path: 'ActionComponent',component: ActionComponent , },
+  { path: 'test',component: PortfelioComponent , },
  
 ];
 
