@@ -1,0 +1,40 @@
+<div class="open">
+    <button mat-icon-button (click)="openNav()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+    </button>
+    <div class="logo">
+        <img width="300p" src="assets/images/Zouaouine.png" alt="logo">
+    </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  
+    <div class="conteneur">
+        <ul>
+            <li>  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a></li>
+            <li><a routerLink="/Acceuil" [routerLinkActive]="'active'"> HOME </a></li>
+            <li><a routerLink="/about" [routerLinkActive]="'active'">About Us </a>
+            </li>
+            <li><a routerLink="/NOSACTIONS" [routerLinkActive]="'active'">NOS ACTIONS</a></li>
+            <li><a routerLink="/joinus" [routerLinkActive]="'active'">JOIN-US</a>
+            </li>
+          </ul>
+          <form class="recherceh d-flex" role="search" (ngSubmit)="onSearch()">
+            <div class="recherchebar">
+              
+                <input matInput type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery" name="searchQuery">
+                
+          
+              <!-- Utilisation de [disabled] pour désactiver le bouton si searchQuery est vide -->
+              <button mat-button class="mat-raised-button mat-primary" type="submit" [disabled]="!searchQuery">Search</button>
+            </div>
+          </form>
+    </div>
+</div>
+
+<div id="main">
+
+</div>

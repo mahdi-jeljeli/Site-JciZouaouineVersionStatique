@@ -10,19 +10,19 @@ ul {
     list-style: none;
 }
 
+app-side-nav-bar{
+    display: none;
+}
+
 /* Small */
-@media (max-width: 768px) {
-    /* .head {
-        width: 100%;
-    } */
-
+@media (max-width: 767px) {
     header {
-        /* display: none; */
+        display: none; 
     }
-
-    .navbar {
-        display: none;
+    app-side-nav-bar{
+        display: block;
     }
+   
     .recherceh .recherchebar input{
         display: none;
     }
@@ -32,41 +32,6 @@ ul {
     }
 }
 
-/* Medium */
-@media (min-width: 769px) and (max-width: 992px) {
-    /* .head {
-        width: 100%;
-    } */
-
-    .navbar {
-        display: none;
-    }
-
-  
-}
-
-/* Large */
-@media (min-width: 993px) {
-    /* .head {
-        width: 990px;
-        margin: 0 auto;
-    } */
-
-    .navbar {
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    /* .head {
-        width: inherit;
-        margin: 0 auto;
-    } */
-
-    .navbar {
-        display: none;
-    }
-}
 
 /*end global rools*/
 
@@ -233,28 +198,6 @@ header nav ul li a:hover .tooltiptext {
 }
 
 
-
-
-/* header  nav mat-form-field{
-    bottom: 25px;
-
-    border-radius: 5px;
-    margin-right: 20px;
-}
-header  nav mat-form-field input{
-    border-radius: 8px;
-    padding: 2px 0;
-    background-color: #fff;
-    text-indent: 5px;
-  
-}
-header  nav mat-form-field mat-icon {
-    position: absolute;
-    top : 10px;
-    left:10rem
-} */
-
-
 @media (max-width : 768px) {
     header nav .form {
         bottom: 0;
@@ -262,45 +205,3 @@ header  nav mat-form-field mat-icon {
 }
 
 /* end header version desctop */
-
-
-/* start header small ecran*/
-svg {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 70px;
-}
-
-img {
-    width: 100px;
-}
-
-span {
-    color: dodgerblue
-}
-
-.navbar-toggler {
-    background-color: #EDBE38;
-
-}
-
-.navbar {
-    background-color: #0A0F29;
-}
-
-.offcanvas-body {
-    background-color: #0A0F29;
-}
-
-.offcanvas-body .nav-item a {
-    color: #EDBE38;
-
-}
-
-.offcanvas-body .nav-item a.active {
-    color: #19c8fa;
-
-}
-
-/* start header small ecran*/

@@ -37,6 +37,7 @@ import { LightboxModule } from 'ngx-lightbox';
 import { SlideShowPhotoForOneActionComponent } from './SousComponent/slide-show-photo-for-one-action/slide-show-photo-for-one-action.component';
 import { WhySectionComponent } from './SousComponent/why-section/why-section.component';
 import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-section.component';
+import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 
 
 
@@ -67,6 +68,7 @@ import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-
     SlideShowPhotoForOneActionComponent,
     WhySectionComponent,
     JoinUsSectionComponent,
+    SideNavBarComponent,
  
 
   
@@ -90,7 +92,7 @@ import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-
     HttpClientModule,
     MatCardModule,
     LightboxModule,
-
+  
 
     
   ],

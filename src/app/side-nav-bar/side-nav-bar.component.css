@@ -1,0 +1,117 @@
+.open{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.open button{
+    margin-left: 15px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: transparent;
+    border-style: solid;
+}
+.open .logo{
+    margin-right: 30px;
+   
+}
+.open .logo img{
+   width: 150px;
+   
+}
+
+@media (max-width : 767px) {
+    .open .logo img{
+        width: 100px;
+        margin-top: 15px;
+     }
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  button {
+    display: block;
+    width: 40px;
+   color: #EDBE38;
+  }
+  button mat-icon{
+    color: red;
+  }
+
+  .sidenav .conteneur ul li {
+  list-style: none;
+  } 
+
+  .sidenav .conteneur ul li a{
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+
+  .recherceh {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    height: 30px;
+    /* background-color: #EDBE38; */
+}
+.recherceh .recherchebar {
+    display: flex;
+    width: 150px;
+}
+.recherceh .recherchebar input{
+    background-color: #fff;
+    width: inherit;
+    margin-left: 35px;
+    padding-left: 10px;
+}
+
+.recherceh .recherchebar button{
+    height: 30px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
