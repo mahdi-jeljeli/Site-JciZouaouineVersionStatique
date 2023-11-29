@@ -35,6 +35,8 @@ import { AlbomPhotosComponent } from './SousComponent/albom-photos/albom-photos.
 import { AllActionComponent } from './SousComponent/all-action/all-action.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { SlideShowPhotoForOneActionComponent } from './SousComponent/slide-show-photo-for-one-action/slide-show-photo-for-one-action.component';
+import { WhySectionComponent } from './SousComponent/why-section/why-section.component';
+import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-section.component';
 
 
 
@@ -63,6 +65,8 @@ import { SlideShowPhotoForOneActionComponent } from './SousComponent/slide-show-
     AlbomPhotosComponent,
     AllActionComponent,
     SlideShowPhotoForOneActionComponent,
+    WhySectionComponent,
+    JoinUsSectionComponent,
  
 
   

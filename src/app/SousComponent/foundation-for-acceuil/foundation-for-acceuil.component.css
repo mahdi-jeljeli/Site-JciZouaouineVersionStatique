@@ -1,12 +1,7 @@
-/* start fouder prespective */
-.cont .founders {
-    position: relative;
-    /* margin-top: -150px; */
-}
 
 .cont .founders .content {
     text-align: center;
-   
+     /* margin-top: -150px; */
 }
 
 .cont .founders .content .top-bar{
@@ -35,23 +30,20 @@
     display: block;
 }
 
-/*small*/
-@media(max-width: 768px) {
-    
-    
-    .cont .founders {
-        position: relative;
-        margin-top: 0px;
-    } 
-}
 
 
 /*meduim*/
-@media(max-width: 900px) {
+@media(max-width: 991px) {
 
     .cont .founders {
         position: relative;
-        margin-top: 200px;
+        margin-top: 0px;
+    }
+}
+/*small*/
+@media(max-width: 768px) {
+    .cont .founders .content {
+        text-align: center;
     }
 }
 

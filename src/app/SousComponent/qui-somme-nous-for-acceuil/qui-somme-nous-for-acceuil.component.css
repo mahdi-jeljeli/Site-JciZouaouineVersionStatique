@@ -35,21 +35,15 @@
    
      padding: 5px 20px;
      background-color: white;
-     border-color: #3A67B1;
+     border-color: #ebf0f7;
      color: #3A67B1;
-     box-shadow: 0 0 5px #3A67B1; 
      border-radius: 20px;
      margin-right: 50px;
      margin-top: 20px;
    }
    
    .more .btn-more .read-more:hover {
-     box-shadow: 
-         0 0 5px #3A67B1,
-         0 0 25px #3A67B1,
-         0 0 50px #3A67B1,
-         0 0 100px #3A67B1,
-         0 0 200px #3A67B1; 
+   background-color: #bdcbe2;
    }
    
     .nousomme .team{
@@ -63,9 +57,10 @@
     
     }
    
-    @media(max-width : 768px ){
+    @media(max-width : 991px ){
      .nousomme {
        display: block;
+       width: 90%;
       }
       .nousomme .conteneur .qui-nous  .paragraphe {
       margin-right: 60px;

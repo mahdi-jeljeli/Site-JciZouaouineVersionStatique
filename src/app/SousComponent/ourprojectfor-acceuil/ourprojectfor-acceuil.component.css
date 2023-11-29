@@ -81,7 +81,17 @@
     display: block;
 }
 
+@media(max-width: 991px) {
+    .notre-projet .prigect {
+        margin-top: 0px;
+    }
+}
+
 @media(max-width: 768px) {
+    .notre-projet .prigect {
+        margin-top: 0px;
+    
+    }
     .devloppment img {
         margin-left: 0px;
 

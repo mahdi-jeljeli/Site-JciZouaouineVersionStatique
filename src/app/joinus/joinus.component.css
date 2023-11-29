@@ -1,64 +1,73 @@
-
-.conteneur-parent{
+.conteneur-parent {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    
+
 }
-.conteneur-parent .conteneur{
+
+.conteneur-parent .conteneur {
     display: block;
     justify-content: center;
 }
-.conteneur-parent .conteneur .logo{
+
+.conteneur-parent .conteneur .logo {
     display: flex;
     justify-content: center;
 }
-.conteneur-parent .conteneur  .title_1{
+
+.conteneur-parent .conteneur .title_1 {
     margin-bottom: 30px;
-   
+
 }
 
-.conteneur-parent .conteneur .formulaire{
+.conteneur-parent .conteneur .formulaire {
     display: inline-block;
     justify-content: center;
     width: 100%;
     height: auto;
-    border-radius: 5%;
+    border-radius: 5% 5% 5% 5%;
     background: linear-gradient(to bottom, #EDBE38, #0097D7);
 }
-.conteneur-parent .conteneur .formulaire .title{
+
+.conteneur-parent .conteneur .formulaire .title {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-   
+
 }
-.conteneur-parent .conteneur .formulaire .form{
+
+.conteneur-parent .conteneur .formulaire .form {
     /* background-color: brown; */
     text-align: center;
     line-height: 100vh;
     margin-top: 30px;
-  
+
 }
+
 .conteneur-parent .conteneur .formulaire .form form {
     display: flex;
-    flex-direction: column; /* Organize inputs one below the other */
+    flex-direction: column;
+    /* Organize inputs one below the other */
     margin: 0 30px;
     border-radius: 50px;
 }
-.conteneur-parent .conteneur .formulaire .form form mat-form-field  input{
+
+.conteneur-parent .conteneur .formulaire .form form mat-form-field input {
     color: #fff;
 }
-.conteneur-parent .conteneur .formulaire .submit{
+
+.conteneur-parent .conteneur .formulaire .submit {
     display: flex;
     justify-content: center;
-    padding: 5px ;
+    padding: 5px;
     margin-top: 30px;
     margin-bottom: 30px;
-   
+
 }
-.conteneur-parent .conteneur .formulaire .submit button{
-    
+
+.conteneur-parent .conteneur .formulaire .submit button {
+
     padding: 5px 20px;
     background-color: white;
     border-color: #EDBE38;
@@ -67,15 +76,16 @@
     color: #EDBE38;
 }
 
-.dev{
+.dev {
 
     display: flex;
     justify-content: center;
 }
+
 .devloppment {
     justify-content: center;
     width: 60%;
-    overflow: hidden; 
+    overflow: hidden;
     margin-bottom: 60px;
     margin-left: 5%;
 }
@@ -84,4 +94,25 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+
+@media(max-width : 991px) {
+    .conteneur-parent .conteneur {
+       width: 80%;
+    }
+}
+
+@media(max-width : 768px) {
+    .conteneur-parent .conteneur .title_1 {
+        display: flex;
+        justify-content: center;
+    
+    }
+    .conteneur-parent .conteneur .title_1 h1{
+        font-size: 20px;  
+    }
+    .conteneur-parent .conteneur .formulaire .title h1{
+        font-size: 20px;
+    }
 }

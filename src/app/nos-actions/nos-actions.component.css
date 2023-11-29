@@ -1,4 +1,3 @@
-
 section {
   width: inherit;
   background: linear-gradient(to bottom, #EDBE38, #0097D7);
@@ -7,7 +6,6 @@ section {
 
 .conteneur {
   display: flex;
-  /* position: absolute; */
   justify-content: space-between;
 }
 
@@ -19,7 +17,6 @@ section {
 }
 
 .ourProject .text {
-  width: 100%;
   margin-top: 40px;
 }
 
@@ -33,7 +30,6 @@ section {
 }
 
 .ourProject h1 {
-  width: 100%;
   font-weight: bolder;
   display: block;
   font-size: 70px;
@@ -79,8 +75,12 @@ section {
 }
 
 
+@media(max-width : 991px) {
+  .ourProject .text .title .cercle {
+    display: none;
 
-
+  }
+}
 @media(max-width : 768px) {
   .conteneur {
     display: block;
@@ -98,7 +98,7 @@ section {
   .ourProject {
     margin-left: 10%;
     margin-top: 60px;
-    width: 100%;
+    width: 90%;
 
   }
 
@@ -111,10 +111,7 @@ section {
     font-size: 30px;
   }
 
-  .ourProject .text .title .cercle {
-    display: none;
-
-  }
+ 
 
   .ourProject .text span {
     width: 90%;
