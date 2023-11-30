@@ -1,62 +1,149 @@
+/* start couverture */
+.couverture {
+    height: 100%;
+    margin: 0;
+    margin-top: -200px;
+    position: relative;
+    text-align: center;
+    color: red;
+}
+
+ .welcome {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    text-align: center;
+}
+
+.welcome .centered p{
+    position: absolute;
+    bottom:  20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    font-size: 50px;
+    color: aliceblue;
+}
+.wave{
+    position: absolute;
+    top:  130%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+ 
+/* end couverture */
+
 /* start qui nous somme  */
 .nousomme {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-top: 150px;
-   
-   }
-   .nousomme .conteneur{
-     width: 100%;
-     margin-left: 20px;
-    }
-    .nousomme .conteneur .qui-nous  {
-     width: 100%;
-   }
-   .nousomme .conteneur .qui-nous h1 span {
-     font-weight: bolder;
-     display: block;
-     font-size: 70px;
-   }
-   .nousomme .qui-nous  .paragraphe p {
-     color: #444;
-     text-align: justify;
-     font-weight: 300;
-     font-family: Arial, Helvetica, sans-serif;
-     line-height: 1.6;
-     display: block;
-   }
-   .nousomme .qui-nous  .paragraphe p a{
+
+}
+
+.nousomme .conteneur {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.nousomme .conteneur .qui-nous {
+    width: 100%;
+}
+
+.nousomme .conteneur .qui-nous h1 span {
+    font-weight: bolder;
+    display: block;
+    font-size: 70px;
+}
+
+.nousomme .qui-nous .paragraphe p {
+    color: #444;
+    text-align: justify;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: block;
+}
+
+.nousomme .qui-nous .paragraphe p a {
     cursor: pointer;
-  }
-    .nousomme .team{
-     width: 100%;
-   
+}
+
+.nousomme .team {
+    width: 100%;
+
+}
+
+.nousomme .team img {
+    width: 90%;
+    margin-top: -50px;
+
+
+}
+
+@media(max-width : 991px) {
+    .nousomme {
+        display: block;
+        width: 90%;
     }
-    .nousomme .team img{
-     width: 90%;
-     margin-top: -50px;
-   
+
+    .nousomme .conteneur .qui-nous .paragraphe {
+        margin-right: 60px;
+    }
+
+    .nousomme .team img {
+        margin-top: -50pxpx;
+    }
+
+    .nousomme .team img {
+        margin-top: 100px;
+    }
+}
+
+@media(max-width : 767px) {
+
+    .couverture {
+        padding-top: 0px;
+    }
+    .couverture {
+        margin-top: -40px;
+        position: relative;
+        text-align: center;
+        color: red;
+    }
     
+
+    .welcome {
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        text-align: center;
     }
-   
-    @media(max-width : 991px ){
-     .nousomme {
-       display: block;
-       width: 90%;
-      }
-      .nousomme .conteneur .qui-nous  .paragraphe {
-      margin-right: 60px;
-      }
-      .nousomme .team img{
-       margin-top: -50pxpx;
-      }
+    .welcome .centered p{
+        position: absolute;
+        bottom:  0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:500;
+        font-size: 30px;
+        color: aliceblue;
     }
-    @media(max-width : 968px ){
-     
-     .nousomme .team img{
-       margin-top: 100px;
-      }
-    }
-   
- /* end qui nous somme  */
+}
+
+/* end qui nous somme  */

@@ -20,7 +20,7 @@ header .head {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+
     min-height: 97px;
     background-color: #0A0F29;
      position: fixed;
