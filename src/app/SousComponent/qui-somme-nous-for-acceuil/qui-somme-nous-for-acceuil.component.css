@@ -1,4 +1,5 @@
 /* start couverture */
+
 .couverture {
     height: 100%;
     margin: 0;
@@ -8,39 +9,42 @@
     padding-top: 50px;
 }
 
- .welcome {
+.welcome {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     text-align: center;
 }
 
-.welcome .centered p{
+.welcome .centered p {
     position: absolute;
-    bottom:  20%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight:500;
+    font-weight: 500;
     font-size: 50px;
     color: aliceblue;
 }
-.wave{
+
+.wave {
     position: absolute;
-    top:  130%;
+    top: 95%;
     left: 50%;
     width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
+    height: auto;
+
 }
 
 
- 
+
 /* end couverture */
 
 /* start qui nous somme  */
@@ -67,13 +71,19 @@
     font-size: 70px;
 }
 
+.nousomme .qui-nous .paragraphe {
+    width: 100%;
+
+}
+
 .nousomme .qui-nous .paragraphe p {
     color: #444;
+
     text-align: justify;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    display: block;
+
 }
 
 .nousomme .qui-nous .paragraphe p a {
@@ -82,24 +92,23 @@
 
 .nousomme .team {
     width: 100%;
-
+    margin-left: 20px
 }
 
 .nousomme .team img {
     width: 90%;
     margin-top: -50px;
-
-
 }
 
 @media(max-width : 991px) {
 
-    .welcome .centered p{
+    .welcome .centered p {
         position: absolute;
-        bottom:  0%;
-        margin-top:100px ;
-        
+        bottom: 0%;
+        margin-top: 100px;
+
     }
+
     .nousomme {
         display: block;
         width: 90%;
@@ -109,45 +118,49 @@
         margin-right: 60px;
     }
 
-    .nousomme .team img {
-        margin-top: -50pxpx;
-    }
-
-    .nousomme .team img {
-        margin-top: 100px;
-    }
 }
 
 @media(max-width : 767px) {
     .couverture {
-      
         margin-top: -40px;
         position: relative;
         text-align: center;
         padding-top: 50px;
     }
-    
 
     .welcome {
         width: 100%;
         height: 100%;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.5);
         display: flex;
         text-align: center;
     }
-    .welcome .centered p{
+
+    .welcome .centered p {
         position: absolute;
-        bottom:  0%;
-        margin-top:200px ;
+        bottom: 0%;
+        margin-top: 200px;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: Arial, Helvetica, sans-serif;
-        font-weight:500;
+        font-weight: 500;
         font-size: 30px;
         color: aliceblue;
+    }
+
+    .nousomme {
+        padding-top: 100px;
+    }
+    .nousomme .team {
+        width: 100%;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
+        
+        
     }
 }
 

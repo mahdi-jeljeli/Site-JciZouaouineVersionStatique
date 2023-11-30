@@ -2,6 +2,7 @@
 .cont .founders .content {
     text-align: center;
      /* margin-top: -150px; */
+     padding-bottom: 100px;
 }
 
 .cont .founders .content .top-bar{
@@ -44,6 +45,7 @@
 @media(max-width: 768px) {
     .cont .founders .content {
         text-align: center;
+        padding-bottom: 50px;
     }
 }
 

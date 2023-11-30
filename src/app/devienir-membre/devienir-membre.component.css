@@ -38,3 +38,28 @@
 .proceder{
     margin-left: 20px;
 }
+
+@media (max-width: 767px) {
+    .conteneur{
+        padding: 0;
+        margin: 0;
+        padding-top: 60px;
+    }
+    .conteneur .conteneur-content{
+        flex-direction: column;
+
+    }
+    .conteneur .conteneur-content .Pourquoi{
+        width: 90%; 
+    }
+    .proceder{
+        width: 90%; 
+    }
+    .conteneur .conteneur-content .Comment{
+        width: 90%;
+        margin-right: 0px;
+        margin-left: 20px;
+       
+    }
+    
+}

@@ -1,11 +1,16 @@
+#WHYMobileVerion {
+    display: none;
+}
 
 .special-heading {
+    width: auto;
     color: #a8a2a2;
     font-size: 100px;
     text-align: center;
     font-weight: 800;
     letter-spacing: -3px;
     margin: 0;
+    margin-top: 100px;
 
 }
 
@@ -19,6 +24,7 @@
 @media (max-width:767px) {
     .special-heading {
         font-size: 60px;
+        margin-top: 0px;
 
     }
 
@@ -27,61 +33,77 @@
     }
 }
 
-    /* end component  */
+/* end component  */
 
-     /* start WHY  */
-    .WHY-content{
-        margin-top: 100px;
-        display: flex;
-        flex-wrap: wrap;    /*bch ken ll content zedt ll misse7a mte3oo yahbet louta  */
-        justify-content: space-between;
-    }
+/* start WHY  */
+.WHY-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /*bch ken ll content zedt ll misse7a mte3oo yahbet louta  */
+    justify-content: space-between;
+}
 
-    @media (max-width : 991px) {
-        .WHY-content{
-            flex-direction: column;
-            text-align: center;
-            width: 90%;
-        }
+@media (max-width : 991px) {
+    .WHY-content {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin-top: 50px;
     }
-    .WHY-content .image{
-        position: relative;
-        width: 400px;
-        height: 500px;
-    }
-    .WHY-content .image img{
-        
-        width: 100%;
-        height: 500px;
-    }
-    @media (max-width : 991px) {
-        .WHY-content .image{
-            margin: 0 auto 60px;
-        }
-    }
-    
-    @media (max-width : 991px) {
-        
-    }
-    .WHY-content .text{
-        flex-basis: calc(100% - 500px);
-        
-    }
-    .WHY-content .text p:first-of-type{
-        font-weight: bold;
-        line-height: 2;
-        margin-bottom: 50px;
+}
 
-    }
-    .WHY-content .text hr{
-        width: 50%;
-        display: inline-block;
-        border-color: var(--main-color);
+.WHY-content .image {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
 
-    }
-    .WHY-content .text p:last-of-type{
-        line-height: 2;
-        color: var(--third-color);
-    }
+.WHY-content .image img {
 
-    /*end WHY  */
+    width: 90%;
+    height: 500px;
+}
+
+@media (max-width : 991px) {
+    .WHY-content .image {
+        width: 80%;
+        margin: 0 auto 60px;
+    }
+}
+
+
+
+.WHY-content .text {
+    flex-basis: calc(100% - 500px);
+}
+
+.WHY-content .text p:first-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+
+}
+
+.WHY-content .text hr {
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+
+}
+
+.WHY-content .text p:last-of-type {
+    line-height: 2;
+    color: var(--third-color);
+}
+
+@media (max-width : 767px) {
+    #WHYDescktop {
+        display: none;
+    }
+    #WHYMobileVerion {
+        display: block;
+    }
+}
+
+/*end WHY  */

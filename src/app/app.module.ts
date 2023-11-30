@@ -40,6 +40,8 @@ import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-
 import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
 import { DevienirMembreComponent } from './devienir-membre/devienir-membre.component';
 import { CredoSectionComponent } from './SousComponent/credo-section/credo-section.component';
+import { MissionComponent } from './SousComponent/mission/mission.component';
+import { VisionComponent } from './SousComponent/vision/vision.component';
 
 
 
@@ -73,6 +75,8 @@ import { CredoSectionComponent } from './SousComponent/credo-section/credo-secti
     SideNavBarComponent,
     DevienirMembreComponent,
     CredoSectionComponent,
+    MissionComponent,
+    VisionComponent,
  
 
   

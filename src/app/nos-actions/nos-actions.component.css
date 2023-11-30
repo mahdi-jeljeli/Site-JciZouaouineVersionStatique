@@ -25,7 +25,7 @@ section {
   font-weight: bolder;
   display: block;
   font-size: 70px;
-  border-top: 0.3cm solid purple;
+  border-top: 0.3cm solid #3A67B1;
   margin-right: calc((100% - 3cm) - 10px);
 
 }
@@ -58,7 +58,7 @@ section {
   /* Ajustez la taille du cercle selon vos besoins */
   height: 100px;
   /* Assurez-vous que width et height soient égaux pour un cercle */
-  border: 20px solid #0097D7;
+  border: 20px solid #3A67B1;
   /* Épaisseur et couleur du contour du cercle */
   border-radius: 50%;
   /* Bordure pour rendre le div circulaire */

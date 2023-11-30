@@ -12,6 +12,10 @@ import { ActionComponent } from './SousComponent/action/action.component';
 import { WhySectionComponent } from './SousComponent/why-section/why-section.component';
 import { DevienirMembreComponent } from './devienir-membre/devienir-membre.component';
 import { CredoSectionComponent } from './SousComponent/credo-section/credo-section.component';
+import { MissionComponent } from './SousComponent/mission/mission.component';
+import { VisionComponent } from './SousComponent/vision/vision.component';
+import { QuiSommeNousForAcceuilComponent } from './SousComponent/qui-somme-nous-for-acceuil/qui-somme-nous-for-acceuil.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'Acceuil', pathMatch: 'full' },
@@ -26,7 +30,7 @@ const routes: Routes = [
   { path: 'action/:id', component: ActionComponent, },
   { path: 'ActionComponent', component: ActionComponent, },
   { path: 'devenirUnMembre', component: DevienirMembreComponent, },
-  { path: 'test', component: CredoSectionComponent, },
+  { path: 'test', component: NavbarComponent, },
 ];
 
 @NgModule({

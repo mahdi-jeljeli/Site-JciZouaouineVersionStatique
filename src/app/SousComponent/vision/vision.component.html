@@ -1,0 +1,65 @@
+<div class="conteneur"  id="desktopVersion">
+    <div class="image">
+        <img width="500px" src="assets/images/2.jpg" alt="">
+    </div>
+    <div class="Mission">
+        <h1>OUR VISION</h1>
+        <h6>“To be the foremost global network of young leaders” :</h6>
+        <p>
+            Our vision at JCI is bold and inspiring. We envision a world where young leaders from diverse backgrounds
+            and cultures come together to form a powerful global network. We aspire to be the foremost platform that
+            nurtures, empowers, and connects these young leaders
+            <span *ngIf="showMoreONQuiSommeNous">
+                providing them with unparalleled opportunities for growth and impact. Being the foremost global network
+                of young leaders means that we are not just an organization; we are a movement. We are a collective
+                force of passionate individuals who believe in the power of youth to drive positive change. We aim to
+                create a vibrant community where ideas are shared, dreams are realized, and aspirations are turned into
+                tangible actions. In this global network, we celebrate our differences and embrace our common goal: to
+                make a difference in the world. We transcend the boundaries of nations and cultures because we
+                understand that the challenges we face are global in nature. By fostering unity and collaboration, we
+                harness the collective strength of our members to address pressing issues and create sustainable
+                solutions.
+            </span>
+            <a class="read-more" (click)="toggleReadMoreForQuiSommeNous()">
+                {{ showMoreONQuiSommeNous ? 'Read less' : 'Read more' }}
+            </a>
+        </p>
+        <div class="missionlogo">
+            <img src="assets/images/vision.png" alt="">
+        </div>
+    </div>
+
+</div>
+<div class="conteneur"  id="mobileVesion">
+  
+    <div class="Mission">
+        <h1>OUR VISION</h1>
+        <h6>“To be the foremost global network of young leaders” :</h6>
+        <p>
+            Our vision at JCI is bold and inspiring. We envision a world where young leaders from diverse backgrounds
+            and cultures come together to form a powerful global network. We aspire to be the foremost platform that
+            nurtures, empowers, and connects these young leaders
+            <span *ngIf="showMoreONQuiSommeNous">
+                providing them with unparalleled opportunities for growth and impact. Being the foremost global network
+                of young leaders means that we are not just an organization; we are a movement. We are a collective
+                force of passionate individuals who believe in the power of youth to drive positive change. We aim to
+                create a vibrant community where ideas are shared, dreams are realized, and aspirations are turned into
+                tangible actions. In this global network, we celebrate our differences and embrace our common goal: to
+                make a difference in the world. We transcend the boundaries of nations and cultures because we
+                understand that the challenges we face are global in nature. By fostering unity and collaboration, we
+                harness the collective strength of our members to address pressing issues and create sustainable
+                solutions.
+            </span>
+            <a class="read-more" (click)="toggleReadMoreForQuiSommeNous()">
+                {{ showMoreONQuiSommeNous ? 'Read less' : 'Read more' }}
+            </a>
+        </p>
+        <div class="missionlogo">
+            <img src="assets/images/vision.png" alt="">
+        </div>
+    </div>
+    <div class="image">
+        <img width="500px" src="assets/images/2.jpg" alt="">
+    </div>
+
+</div>

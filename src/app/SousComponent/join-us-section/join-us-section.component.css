@@ -1,5 +1,6 @@
 
 .special-heading {
+    width: auto;
     color: #a8a2a2;
     font-size: 100px;
     text-align: center;
@@ -20,6 +21,7 @@
 @media (max-width:767px) {
     .special-heading {
         font-size: 60px;
+        margin-top: 0px;
 
     }
 
@@ -43,7 +45,7 @@
             flex-direction: column;
             text-align: center;
             width: 90%;
-
+            margin-top: 50px;
         }
     }
     .JOIN-content .image{
@@ -53,11 +55,12 @@
     }
     .JOIN-content .image img{
         
-        width: 100%;
+        width: 90%;
         height: 500px;
     }
     @media (max-width : 991px) {
         .JOIN-content .image{
+            width: 80%;
             margin: 0 auto 60px;
         }
     }
@@ -66,8 +69,7 @@
         
     }
     .JOIN-content .text{
-        flex-basis: calc(100% - 500px);
-        
+        flex-basis: calc(100% - 500px);    
     }
     .JOIN-content .text p:first-of-type{
         font-weight: bold;

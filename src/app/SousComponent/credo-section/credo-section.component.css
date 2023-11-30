@@ -18,7 +18,7 @@
     font-weight: bolder;
     font-size: 30px;
     margin-top: 30px;
-    color: blue;
+    color: #3A67B1;
     font-weight: bolder;
 }
 .conteneur .credoText ul{
@@ -43,24 +43,19 @@
 
 }
 
-@media (max-width:791px) {
+@media (max-width:991px) {
     .conteneur{
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
-    .conteneur .credoText ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .conteneur .credoText p{
+
+        font-size: initial;
+
     }
-    li{
-        list-style: none;
-        text-align: justify;
-    
-    }
-   
+
     .conteneur .credoText img{
         display: none;
     }
