@@ -19,24 +19,18 @@
                             eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum
                             nisi,
                             sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
-                            turpis.
-                            <!-- Le reste de votre contenu ici -->
+                            turpis. 
                         </span>
+                        <a class="read-more" (click)="toggleReadMoreForQuiSommeNous()">
+                            {{ showMoreONQuiSommeNous ? 'Read less' : 'Read more' }}
+                        </a>
                     </p>
                 </div>
             </div>
 
             <!-- <button (click)="scrollToOurProject()">Scroll to Our Project</button> -->
 
-            <div class="more">
-                <div class="btn-more">
-                    <div>
-                        <button class="read-more" (click)="toggleReadMoreForQuiSommeNous()">
-                            {{ showMoreONQuiSommeNous ? 'Read less' : 'Read more' }}
-                        </button>
-                    </div>
-                </div>
-            </div>
+          
         </div>
 
         <div class="team">

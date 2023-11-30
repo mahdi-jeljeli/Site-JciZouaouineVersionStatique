@@ -1,9 +1,6 @@
 /* start header version desctop  */
 .head {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+   padding: 0;  
 }
 
 ul {
@@ -13,54 +10,24 @@ ul {
 app-side-nav-bar{
     display: none;
 }
-
-/* Small */
-@media (max-width: 767px) {
-    header {
-        display: none; 
-    }
-    app-side-nav-bar{
-        display: block;
-    }
-   
-    .recherceh .recherchebar input{
-        display: none;
-    }
-    
-    .recherceh .recherchebar button{
-        display: none;
-    }
-}
-
-
 /*end global rools*/
 
 /* start header */
- .head {
-        width: 100%;
-    } 
 
 
 header .head {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     position: relative;
     min-height: 97px;
     background-color: #0A0F29;
-
+     position: fixed;
+    z-index: 9999;
+    top: 0;
 }
 
-/* header .head::after{
-    content:"";
-    position: absolute;
-    height: 2px ;
-    background-color: black;
-    bottom: 17px;
-    width: 100%
-    
-
-} */
 header .head .logo {
     margin-left: 20px;
 }
@@ -81,29 +48,13 @@ header .head nav ul li {
     cursor: pointer;
 }
 
-@media (min-width : 768px) {
-    header .head nav .toggle-menu {
-        display: none;
-        font-size: 30px;
-    }
-}
-
 header .head nav ul {
     display: flex;
     margin-right: 50px;
 
 }
 
-@media (max-width : 767px) {
-    header .head nav ul {
-        /* display: none; */
-        font-size: 10px;
-    }
-    header .head nav ul li a{
-        /* display: none; */
-        font-size: 10px;
-    }
-}
+
 
 header nav ul li a {
     display: block;
@@ -115,6 +66,7 @@ header nav ul li a {
     color: #EDBE38;
     position: relative;
     z-index: 1;
+    font-weight: bolder;
 }
 
 header nav ul li a.active {
@@ -195,13 +147,25 @@ header nav ul li a:hover .tooltiptext {
     height: 30px;
     width: 100%;
     margin-left: 10px;
+    cursor: pointer;
 }
 
-
-@media (max-width : 768px) {
-    header nav .form {
-        bottom: 0;
+@media (max-width : 991px) {
+    header .head nav ul li a{
+        font-size: 10px;
+   
     }
 }
+
+/* Small */
+@media (max-width: 836px) {
+    header {
+        display: none; 
+    }
+    app-side-nav-bar{
+        display: block;
+    }
+}
+
 
 /* end header version desctop */

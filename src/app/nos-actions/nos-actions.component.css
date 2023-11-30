@@ -1,7 +1,8 @@
 section {
   width: inherit;
   /* background: linear-gradient(to bottom, #EDBE38, #0097D7); */
-  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-top: 50px;
 }
 
 .conteneur {
@@ -80,8 +81,13 @@ section {
     display: none;
 
   }
+
 }
 @media(max-width : 768px) {
+  section {
+    padding-top: 00px;
+    margin-top: 0px;
+  }
   .conteneur {
     display: block;
     overflow: hidden;

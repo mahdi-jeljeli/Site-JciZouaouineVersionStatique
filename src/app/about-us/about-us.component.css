@@ -1,8 +1,13 @@
+#mobileversion {
+    display: none;
+}
+
 .conteneure {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 300px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     /* background: linear-gradient(to bottom, #EDBE38, #fff); */
 }
 
@@ -53,28 +58,41 @@
 
 }
 
-@media(max-width: 920px) {
+@media(max-width: 991px) {
     .conteneure .who-we-are .mission img {
         margin-top: 0px;
-    
+
     }
-   
+
 
 }
-@media(max-width: 768px) {
-    
-   
+
+@media(max-width: 767px) {
+
+    #descktopVersion {
+        display: none;
+    }
+
+    #mobileversion {
+        display: block;
+    }
+    .conteneure {
+       margin-top:-50px ;
+       padding-top: 0px;
+    }
+
     .conteneure .who-we-are {
         display: block;
     }
+
     .conteneure .who-we-are .text {
         width: 90%;
         margin-left: 5%;
-    
+
     }
 
     .conteneure .who-we-are .mission {
         width: 90%;
     }
-    
+
 }

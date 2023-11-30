@@ -2,8 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-
+    padding-top: 100px;
+    margin-top: 50px;
 }
 
 .conteneur-parent .conteneur {
@@ -27,7 +27,8 @@
     width: 100%;
     height: auto;
     border-radius: 5% 5% 5% 5%;
-    background: linear-gradient(to bottom, #EDBE38, #0097D7);
+    background-color: #eee;
+    /* background: linear-gradient(to bottom, #EDBE38, #0097D7); */
 }
 
 .conteneur-parent .conteneur .formulaire .title {
@@ -98,12 +99,20 @@
 
 
 @media(max-width : 991px) {
+    .conteneur-parent {
+        padding-top: 0px;
+        margin-top: -50px;
+    }
     .conteneur-parent .conteneur {
        width: 80%;
     }
 }
 
 @media(max-width : 768px) {
+    .conteneur-parent {
+        padding-top: 0px;
+        margin-top: -50px;
+    }
     .conteneur-parent .conteneur .title_1 {
         display: flex;
         justify-content: center;
