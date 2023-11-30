@@ -10,6 +10,8 @@ import { JoinusComponent } from './joinus/joinus.component';
 import { FoundationForAcceuilComponent } from './SousComponent/foundation-for-acceuil/foundation-for-acceuil.component';
 import { ActionComponent } from './SousComponent/action/action.component';
 import { WhySectionComponent } from './SousComponent/why-section/why-section.component';
+import { DevienirMembreComponent } from './devienir-membre/devienir-membre.component';
+import { CredoSectionComponent } from './SousComponent/credo-section/credo-section.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'Acceuil', pathMatch: 'full' },
@@ -23,7 +25,8 @@ const routes: Routes = [
   { path: 'fouders', component: FoundationForAcceuilComponent },
   { path: 'action/:id', component: ActionComponent, },
   { path: 'ActionComponent', component: ActionComponent, },
-  { path: 'test', component: PortfelioComponent, },
+  { path: 'devenirUnMembre', component: DevienirMembreComponent, },
+  { path: 'test', component: CredoSectionComponent, },
 ];
 
 @NgModule({

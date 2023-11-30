@@ -1,0 +1,40 @@
+.conteneur{
+    padding: 0;
+    margin: 0;
+    padding-top: 150px;
+}
+.conteneur .conteneur-content{
+    display: flex;
+    justify-content: space-between;
+}
+.conteneur .conteneur-content .Pourquoi{
+    display: block;
+    width: 40%;
+    margin-left: 20px;
+}
+.conteneur .conteneur-content .Pourquoi p{
+    color: #444;
+    text-align: justify;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: block;  
+
+}
+.conteneur .conteneur-content .Comment{
+    display: block;
+    width: 40%;
+    margin-right: 40px;
+   
+}
+.conteneur .conteneur-content .Comment p{
+    color: #444;
+    text-align: justify;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    display: block;  
+}
+.proceder{
+    margin-left: 20px;
+}

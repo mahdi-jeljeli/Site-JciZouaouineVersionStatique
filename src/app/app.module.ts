@@ -38,6 +38,8 @@ import { SlideShowPhotoForOneActionComponent } from './SousComponent/slide-show-
 import { WhySectionComponent } from './SousComponent/why-section/why-section.component';
 import { JoinUsSectionComponent } from './SousComponent/join-us-section/join-us-section.component';
 import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
+import { DevienirMembreComponent } from './devienir-membre/devienir-membre.component';
+import { CredoSectionComponent } from './SousComponent/credo-section/credo-section.component';
 
 
 
@@ -69,6 +71,8 @@ import { SideNavBarComponent } from './side-nav-bar/side-nav-bar.component';
     WhySectionComponent,
     JoinUsSectionComponent,
     SideNavBarComponent,
+    DevienirMembreComponent,
+    CredoSectionComponent,
  
 
   

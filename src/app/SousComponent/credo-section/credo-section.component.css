@@ -1,0 +1,75 @@
+.conteneur{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.conteneur .credoText {
+    width: 90%;
+}
+.conteneur .credoText h1{
+    margin-left: 20px;
+    margin-top: 30px;
+    font-weight: bolder;
+    color: #555;
+}
+.conteneur .credoText p{
+    margin-left: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 30px;
+    color: blue;
+    font-weight: bolder;
+}
+.conteneur .credoText ul{
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #555;
+    font-weight: bolder;
+}
+.conteneur .credoText ul li{
+    margin-top: 30px;
+    color: #555;
+    font-weight: bolder;
+}
+.conteneur .credoimg{
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+   margin-right: 50px;
+   padding-bottom: 50px;
+   align-items: center;
+   justify-content: center;
+
+}
+
+@media (max-width:791px) {
+    .conteneur{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .conteneur .credoText ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+        list-style: none;
+        text-align: justify;
+    
+    }
+   
+    .conteneur .credoText img{
+        display: none;
+    }
+    .conteneur .credoimg {
+        width: inherit;
+        margin-right: 0px;
+    }
+    .conteneur .credoimg img{
+        width: 80%;
+    }
+
+}

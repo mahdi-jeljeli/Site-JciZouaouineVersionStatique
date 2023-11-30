@@ -66,6 +66,8 @@
     width: 100%;
     padding: 20px;
     text-align: center;
+    min-height: 300px;
+    max-height: 300px;
 
 }
 
