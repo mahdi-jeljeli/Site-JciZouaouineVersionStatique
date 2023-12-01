@@ -1,15 +1,12 @@
 /* start header version desctop  */
 .head {
-   padding: 0;  
+    padding: 0;
 }
 
 ul {
     list-style: none;
 }
 
-app-side-nav-bar{
-    display: none;
-}
 /*end global rools*/
 
 /* start header */
@@ -20,10 +17,9 @@ header .head {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-
     min-height: 97px;
     background-color: #0A0F29;
-     position: fixed;
+    position: fixed;
     z-index: 9999;
     top: 0;
 }
@@ -50,7 +46,6 @@ header .head nav ul li {
 
 header .head nav ul {
     display: flex;
-    margin-right: 50px;
 
 }
 
@@ -133,17 +128,19 @@ header nav ul li a:hover .tooltiptext {
     height: 30px;
     /* background-color: #EDBE38; */
 }
+
 .recherceh .recherchebar {
     display: flex;
 }
-.recherceh .recherchebar input{
+
+.recherceh .recherchebar input {
     background-color: #EDBE38;
     width: inherit;
     margin-left: 5px;
     padding-left: 10px;
 }
 
-.recherceh .recherchebar button{
+.recherceh .recherchebar button {
     height: 30px;
     width: 100%;
     margin-left: 10px;
@@ -151,19 +148,21 @@ header nav ul li a:hover .tooltiptext {
 }
 
 @media (max-width : 991px) {
-    header .head nav ul li a{
-        font-size: 10px;
-   
+    header .head nav ul li a {
+        font-size: 12px;
+    }
+    .recherceh .recherchebar input {
+        background-color: #EDBE38;
+        width: 130px;
+        margin-left: 5px;
+        padding-left: 10px;
     }
 }
 
 /* Small */
-@media (max-width: 836px) {
+@media (max-width: 767px) {
     header {
-        display: none; 
-    }
-    app-side-nav-bar{
-        display: block;
+        display: none;
     }
 }
 

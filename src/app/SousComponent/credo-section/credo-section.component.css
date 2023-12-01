@@ -1,11 +1,11 @@
 .conteneur{
+    width: 100%;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
 }
 .conteneur .credoText {
-    width: 90%;
+    width: 50%;
 }
 .conteneur .credoText h1{
     margin-left: 20px;
@@ -33,15 +33,18 @@
     font-weight: bolder;
 }
 .conteneur .credoimg{
-    width: 90%;
     display: flex;
+    width: 40%;
     margin-top: 30px;
-   margin-right: 50px;
    padding-bottom: 50px;
    align-items: center;
    justify-content: center;
-
 }
+.conteneur .credoimg img{
+    width: 500px;
+    margin-left: 30%;
+}
+
 
 @media (max-width:991px) {
     .conteneur{
@@ -49,6 +52,9 @@
         /* justify-content: center;
         align-items: center;
         text-align: center; */
+    }
+    .conteneur .credoText {
+        width: 100%;
     }
     .conteneur .credoText p{
 
@@ -62,7 +68,13 @@
     .conteneur .credoimg {
         width: inherit;
         margin-right: 0px;
+        margin-left: 0px;
     }
+    .conteneur .credoimg img{
+        width: initial;
+        margin-left: 0%;
+    }
+    
     .conteneur .credoimg img{
         width: 80%;
     }

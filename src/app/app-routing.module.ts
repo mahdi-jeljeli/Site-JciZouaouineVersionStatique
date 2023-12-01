@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: 'action/:id', component: ActionComponent, },
   { path: 'ActionComponent', component: ActionComponent, },
   { path: 'devenirUnMembre', component: DevienirMembreComponent, },
-  { path: 'test', component: NavbarComponent, },
+  { path: 'test', component: CredoSectionComponent, },
 ];
 
 @NgModule({

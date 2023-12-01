@@ -1,3 +1,4 @@
+
 section {
   width: inherit;
   /* background: linear-gradient(to bottom, #EDBE38, #0097D7); */
@@ -84,6 +85,7 @@ section {
 
 }
 @media(max-width : 768px) {
+  
   section {
     padding-top: 00px;
     margin-top: 0px;

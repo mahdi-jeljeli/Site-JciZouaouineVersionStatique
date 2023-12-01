@@ -1,7 +1,7 @@
 /* start tote les images */
 .container {
   box-sizing: border-box;
-  width: 50%;
+  width: 70%;
   position: relative;
 
 }
@@ -98,10 +98,15 @@
 .demo:hover {
   opacity: 1;
 }
-
+@media(max-width : 991px) {
+    
+}
 @media(max-width : 768px) {
   .container {
-    width: 70%;
+    width: 90%;
+  }
+  .mySlides {
+    margin-top: 50px;
   }
   .mySlides img {
     max-height: initial;

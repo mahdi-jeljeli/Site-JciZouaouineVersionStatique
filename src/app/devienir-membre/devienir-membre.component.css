@@ -1,7 +1,13 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 .conteneur{
     padding: 0;
     margin: 0;
-    padding-top: 150px;
+
 }
 .conteneur .conteneur-content{
     display: flex;
@@ -11,6 +17,9 @@
     display: block;
     width: 40%;
     margin-left: 20px;
+}
+.conteneur .conteneur-content .Pourquoi h1{
+   color: #3A67B1;
 }
 .conteneur .conteneur-content .Pourquoi p{
     color: #444;
@@ -27,6 +36,10 @@
     margin-right: 40px;
    
 }
+.conteneur .conteneur-content .Comment h1{
+    color: #3A67B1;
+   
+}
 .conteneur .conteneur-content .Comment p{
     color: #444;
     text-align: justify;
@@ -36,13 +49,22 @@
     display: block;  
 }
 .proceder{
-    margin-left: 20px;
+    margin-left: 20px; 
+    padding-bottom: 20px;
+}
+.proceder h1{
+    color: #3A67B1;
 }
 
 @media (max-width: 767px) {
+    .logo{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .conteneur{
         padding: 0;
         margin: 0;
+        margin-top: -40px;
         padding-top: 60px;
     }
     .conteneur .conteneur-content{
@@ -60,6 +82,15 @@
         margin-right: 0px;
         margin-left: 20px;
        
+    }
+    .conteneur .conteneur-content .Comment h1{
+       font-size: 20px;
+    }
+    .conteneur .conteneur-content .Pourquoi h1{
+        font-size: 20px;
+    }
+    .proceder h1{
+        font-size: 20px;
     }
     
 }
