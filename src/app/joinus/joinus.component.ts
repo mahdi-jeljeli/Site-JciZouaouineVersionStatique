@@ -4,7 +4,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { MembreRequest } from '../Models/Membre';
 import { EmailRequest } from '../Models/EmailRequest';
 import { MemberServicesService } from '../Services/member-services.service';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 @Component({
   selector: 'app-joinus',
   templateUrl: './joinus.component.html',
@@ -49,7 +49,13 @@ export class JoinusComponent implements OnInit {
     // Handle date changes if needed
   }
   ngOnInit(): void {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo(0, 0);
+      }
+    });
   }
+
 
   onSubmit() {
     let formData: EmailRequest | null = null;// Declare formData outside the if block

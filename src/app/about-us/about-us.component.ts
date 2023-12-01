@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+ 
+  constructor(private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Faites défiler la page vers le haut lorsque la navigation est terminée
+        window.scrollTo(0, 0);
+      }
+    });
   }
-
 }
