@@ -10,6 +10,19 @@
     display: block;
     justify-content: center;
 }
+.retour{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
+  .retour button{
+    background-color: transparent;
+   border: none;
+  }
+  .retour button:hover{
+   color: blue;
+   }
+   
 
 .conteneur-parent .conteneur .logo {
     display: flex;
@@ -111,7 +124,7 @@
 @media(max-width : 768px) {
     .conteneur-parent {
         padding-top: 0px;
-        margin-top: -50px;
+        margin-top: 0px;
     }
     .conteneur-parent .conteneur .title_1 {
         display: flex;
