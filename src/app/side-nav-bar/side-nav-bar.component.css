@@ -56,10 +56,21 @@
   button {
     display: block;
     width: 40px;
-   color: #EDBE38;
+    color: #EDBE38;
   }
+  .sidenav img{
+    position: absolute;
+    top: 0;
+    margin-left: 25px;
+  }
+
+  .sidenav .conteneur ul {
+    margin-top: 50px;
+    
+    } 
   .sidenav .conteneur ul li {
   list-style: none;
+  
   } 
   .sidenav .conteneur ul li a{
     padding: 8px 8px 8px 0px;
@@ -83,7 +94,7 @@
     font-size: 36px;
     margin-left: 50px;
   }
-  
+
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main {
     transition: margin-left .5s;

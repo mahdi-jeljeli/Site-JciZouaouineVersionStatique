@@ -101,6 +101,11 @@
 }
 
 @media(max-width : 991px) {
+    .couverture {
+        margin-top: 0px;
+
+    }
+
 
     .welcome .centered p {
         position: absolute;
@@ -122,7 +127,7 @@
 
 @media(max-width : 767px) {
     .couverture {
-        margin-top: -40px;
+        margin-top: -90px;
         position: relative;
         text-align: center;
         padding-top: 50px;
