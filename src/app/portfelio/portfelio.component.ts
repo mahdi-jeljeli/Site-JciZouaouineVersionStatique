@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-portfelio',
@@ -6,47 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfelio.component.css']
 })
 export class PortfelioComponent implements OnInit {
-  private modal: HTMLElement | null;
-  private btn: HTMLElement | null;
-  private span: HTMLElement | null;
 
-  constructor() {
-    // Initialisation des éléments du DOM
-    this.modal = document.getElementById("myModal") as HTMLElement;
-    this.btn = document.getElementById("myBtn") as HTMLElement;
-    this.span = document.getElementsByClassName("close")[0] as HTMLElement;
-  }
 
   ngOnInit(): void {
-    // Configuration des gestionnaires d'événements après l'initialisation du composant
-    if (this.btn) {
-      this.btn.onclick = () => {
-        this.openModal();
-      };
-    }
+  
+  }
+  prevScrollpos = window.pageYOffset;
 
-    if (this.span) {
-      this.span.onclick = () => {
-        this.closeModal();
-      };
-    }
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById('navbar');
 
-    window.onclick = (event) => {
-      if (this.modal && event.target == this.modal) {
-        this.closeModal();
+    if (navbar) {
+      // Vérifier si l'élément est non null avant de manipuler les styles
+      if (this.prevScrollpos > currentScrollPos) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = '-50px';
       }
-    };
-  }
 
-  openModal(): void {
-    if (this.modal) {
-      this.modal.style.display = "block";
+      this.prevScrollpos = currentScrollPos;
     }
   }
 
-  closeModal(): void {
-    if (this.modal) {
-      this.modal.style.display = "none";
-    }
-  }
 }

@@ -11,9 +11,6 @@ import { HostListener } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  @ViewChild('contactUsFooter')
-  contactUsFooter!: ElementRef;
-
   constructor(
     private router: Router,
     private searchService: SearchService,
@@ -29,8 +26,6 @@ export class NavbarComponent implements OnInit {
     }
   }
   ngOnInit(): void {
-    this.onWindowScroll();
-    this.cdr.detectChanges();
   }
   ngAfterViewInit() {
 
@@ -43,22 +38,24 @@ export class NavbarComponent implements OnInit {
     this.cdr.detectChanges();
   }
 
-  private lastScrollPosition = 0;
-
+  prevScrollpos = window.pageYOffset;
 
   @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    const currentScrollPosition = window.scrollY;
+  onWindowScroll() {
+    const currentScrollPos = window.pageYOffset;
+    const navbar = document.getElementById('navbar');
 
-    if (currentScrollPosition > this.lastScrollPosition) {
-      // Scroll down
-      this.renderer.setStyle(this.el.nativeElement, 'top', `-${this.el.nativeElement.offsetHeight}px`);
-    } else {
-      // Scroll up
-      this.renderer.setStyle(this.el.nativeElement, 'top', '0');
+    if (navbar) {
+      // Vérifier si l'élément est non null avant de manipuler les styles
+      if (this.prevScrollpos > currentScrollPos) {
+        navbar.style.top = '0';
+      } else {
+        navbar.style.top = '-120px';
+      }
+
+      this.prevScrollpos = currentScrollPos;
     }
-
-    this.lastScrollPosition = currentScrollPosition;
   }
+
 }
 

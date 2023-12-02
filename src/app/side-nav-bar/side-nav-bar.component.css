@@ -1,12 +1,12 @@
 .open{
-    height: 100px;
+    min-height: 100px;
     /* background-color: rgba(0, 0, 0, 0.5); */
     background-color:  #0A0F29; ;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
+    position: fixed; 
     width: 100%;
-    /* z-index: 9999; */
+    z-index: 9999;
     display: none;
 }
 .open button{

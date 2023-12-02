@@ -71,6 +71,11 @@
     text-align: center;
     min-height: 300px;
     max-height: 300px;
+    cursor: pointer;
+    transition: 1s;
+}
+.notre-projet .prigect .photos .imgs img:hover{
+   transform: scale(1.2);
 }
 
 .devloppment {
