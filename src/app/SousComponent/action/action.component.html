@@ -1,22 +1,21 @@
-<div class="conteneur" *ngFor="let data of action">
+<div class="conteneur" >
     <div class="retour">
         <button mat-icon-button [routerLink]="'/NOSACTIONS'">
           <mat-icon>arrow_back</mat-icon>
         </button>
       </div>      
-    <div class="action">
+      <div class="action">
         <div class="title">
-            <h1>{{ data.titre }}</h1>
+            <h1>{{ action.titre }}</h1>
         </div>
         <div class="soustitle">
             <h4>Description</h4>
         </div>
         <div class="description">
-            <p>{{ data.description }}</p>
+            <p>{{ action.description }}</p>
         </div>
-        <app-slide-show-photo-for-one-action></app-slide-show-photo-for-one-action>
+        <app-slide-show-photo-for-one-action [actionId]="action.IdAction"></app-slide-show-photo-for-one-action>
     </div>
-  
     <div class="histprique">
         <div class="title">
             <h2>OUR HiSTORIQ</h2>
@@ -24,7 +23,7 @@
         <mat-card-content>
             <div class="conteneur">
                 <div class="cartes">
-                    <div class="carte" *ngFor="let data of action">
+                    <div class="carte" *ngFor="let data of AllAction">
                         <div class="Action">
                             <div class="title_action">
                                 <h1>{{ data.titre }}</h1>

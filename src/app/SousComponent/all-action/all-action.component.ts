@@ -8,21 +8,10 @@ import { ActionServicesService } from 'src/app/Services/action-services.service'
   styleUrls: ['./all-action.component.css']
 })
 export class AllActionComponent implements OnInit {
-  action : any ;
-  constructor(private  ActionServices : ActionServicesService ) { }
+  data = Action;
+  constructor( ) { }
 
   ngOnInit(): void {
-    this. GetAllAction();
+   
   }
-
-  GetAllAction() {
-    // Check if idTache is defined before trying to use it
-      this.ActionServices.getAllAcition().subscribe({
-        next: (result) => {
-          this.action = result;
-          console.log(this.action)
-        }
-      });
-    }
-
 }

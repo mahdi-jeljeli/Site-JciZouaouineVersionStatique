@@ -101,33 +101,6 @@
     padding: 20px;
   }
 
-
-  .recherceh {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-    margin-right: 20px;
-    height: 30px;
-    /* background-color: #EDBE38; */
-}
-.recherceh .recherchebar {
-    display: flex;
-    width: 100px;
-}
-.recherceh .recherchebar input{
-    background-color: #fff;
-    width: inherit;
-    margin-left: 35px;
-    padding-left: 10px;
-}
-
-.recherceh .recherchebar button{
-    height: 30px;
-    width: 100%;
-    margin-left: 10px;
-}
-
-  
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

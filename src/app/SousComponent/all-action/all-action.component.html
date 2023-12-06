@@ -1,26 +1,26 @@
 <mat-card-content>
     <div class="d-flex justify-content-center mt-4">
         <div class="cartes row w-100">
-          <div class="col-md-3 d-flex justify-content-center mt-4" *ngFor="let data of action">
+          <div class="col-md-3 d-flex justify-content-center mt-4" *ngFor="let data of data">
             <div class="carte-Action">
               <div class="title">
                 <h1>{{ data.titre }}</h1>
               </div>
               <div class="carte_content">
-                <span>{{ data.dateAction}}</span>
+                <span>{{ data.date}}</span>
               </div>
               <div class="carte_content">
-                <span>{{ data.lieuAction }}</span>
+                <span>{{ data.lieu }}</span>
               </div>
               <div class="carte_content">
                 <span>{{ data.type }}</span>
               </div>
               <div class="carte_content_img">
                 <!-- <img  src="assets/images/proj4.jpg" alt="logo"> -->
-                <img src={{data.photoCouverture}} alt="logo">
+                <img src="{{data.URl}}" alt="logo">
               </div>
               <div class="carte_content_btn">
-                <a   [routerLink]="['/action',data.idAction]">READ MORE</a>
+                <a   [routerLink]="['/action',data.IdAction]">READ MORE</a>
               </div>
             </div>
           </div>

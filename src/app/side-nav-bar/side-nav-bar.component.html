@@ -23,16 +23,6 @@
             <li><a routerLink="/devenirUnMembre" [routerLinkActive]="'active'">JOIN-US</a>
             </li>
           </ul>
-          <form class="recherceh d-flex" role="search" (ngSubmit)="onSearch()">
-            <div class="recherchebar">
-              
-                <input matInput type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery" name="searchQuery">
-                
-          
-              <!-- Utilisation de [disabled] pour désactiver le bouton si searchQuery est vide -->
-              <button mat-button class="mat-raised-button mat-primary" type="submit" [disabled]="!searchQuery">Search</button>
-            </div>
-          </form>
     </div>
 </div>
 

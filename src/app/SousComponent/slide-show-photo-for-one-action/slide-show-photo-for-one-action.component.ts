@@ -1,18 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-
+import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { ActionServicesService } from 'src/app/Services/action-services.service';
+import { Galerie } from 'src/app/Models/Galerie';
 @Component({
   selector: 'app-slide-show-photo-for-one-action',
   templateUrl: './slide-show-photo-for-one-action.component.html',
   styleUrls: ['./slide-show-photo-for-one-action.component.css']
 })
 export class SlideShowPhotoForOneActionComponent implements OnInit {
+  galerie: any[] = [];  // Liste d'images
+  @Input() actionId: number | undefined;
 
-  constructor() { }
+  constructor( private cdr: ChangeDetectorRef,) { }
 
- 
   ngOnInit(): void {
+     // Filtrer la liste d'actions pour obtenir celle avec l'ID spécifié
+     this.galerie = Galerie.filter(photo => photo.IdAction === this.actionId);
+     console.log(this.galerie)
+     // Vérifier si l'objet action est défini avant de déclencher la détection des changements
+     if (this.galerie) {
+     
+       this.cdr.detectChanges();
+     }
     this.showSlides(this.slideIndex);
   }
+
   slideIndex: number = 1;
   plusSlides(n: number): void {
     this.showSlides(this.slideIndex += n);
@@ -25,7 +36,7 @@ export class SlideShowPhotoForOneActionComponent implements OnInit {
   showSlides(n: number): void {
     let slides: NodeListOf<Element> = document.querySelectorAll(".mySlides");
     let dots: NodeListOf<Element> = document.querySelectorAll(".dot");
-
+    
     if (n > slides.length) { this.slideIndex = 1; }
     if (n < 1) { this.slideIndex = slides.length; }
 
@@ -40,5 +51,4 @@ export class SlideShowPhotoForOneActionComponent implements OnInit {
     (slides[this.slideIndex - 1] as HTMLElement).style.display = "block";
     (dots[this.slideIndex - 1] as HTMLElement).className += " active";
   }
-
 }

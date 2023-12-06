@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ElementRef, Renderer2, ViewChild } from '@angular/core';
-import { SearchService } from '../Services/search.service';
 
 @Component({
   selector: 'app-acceuil',

@@ -59,6 +59,9 @@ footer {
     text-decoration: none;
     color: inherit;
 }
+.footer-distributed .footer-links a:hover{
+   color: blue;
+}
 
 .footer-distributed .footer-company-name {
     color: #8f9296;
@@ -110,8 +113,7 @@ footer {
     line-height: 2;
 }
 
-.footer-distributed .footer-center p a {
-    color: #39A7FF;
+.footer-distributed .footer-center  a {
     text-decoration: none;
 }
 
@@ -144,7 +146,7 @@ footer {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #33383b;
+    background-color: transparent;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
@@ -153,6 +155,15 @@ footer {
     margin-right: 3px;
     margin-bottom: 5px;
 }
+.footer-distributed .footer-icons a svg:hover {
+    transition: 1s;
+
+  }
+.footer-distributed .footer-icons a svg:hover {
+  color: blue;
+  transform: scale(1.1);
+}
+
 
 .fin-footer{
     color: white;

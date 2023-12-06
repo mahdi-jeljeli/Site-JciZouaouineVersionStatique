@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, HostListener, OnInit } from '@angular/core';
-import { SearchService } from '../Services/search.service';
 
 @Component({
   selector: 'app-side-nav-bar',
@@ -9,7 +8,6 @@ import { SearchService } from '../Services/search.service';
 export class SideNavBarComponent implements OnInit {
 
   constructor(
-    private searchService: SearchService,
     private cdr: ChangeDetectorRef,
   ) { }
   ngOnInit(): void {
@@ -26,13 +24,6 @@ export class SideNavBarComponent implements OnInit {
     if (sideNav) {
       sideNav.style.width = "0";
     }
-  }
-
-  searchQuery: string = ''; 
-
-  onSearch(): void {
-    this.searchService.search(this.searchQuery);
-    this.cdr.detectChanges();
   }
 
   prevScrollpos = window.pageYOffset;

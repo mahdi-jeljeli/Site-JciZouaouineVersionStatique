@@ -1,46 +1,17 @@
 <section>
+  <div class="slideshow-container">
+    <div class="mySlides" *ngFor="let photo of galerie; let i = index">
+      <div class="numbertext">{{ i + 1 }} / {{ galerie.length }}</div>
+      <img width="100%" [src]="photo.URl" alt="logo">
+      <div class="text">Album photos</div>
+    </div>
 
-    <div class="slideshow-container">
-        <div class="mySlides ">
-          <div class="numbertext">1 / 3</div>
-          <img width="100%" src="assets/images/4.jpg" alt="logo">
-          <div class="text">Caption Text</div>
-        </div>
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br>
 
-        <div class="mySlides ">
-          <div class="numbertext">2 / 3</div>
-          <img width="100%" src="assets/images/1.jpg" alt="logo">
-          <div class="text">Caption Two</div>
-        </div>
-        
-        <div class="mySlides ">
-          <div class="numbertext">3 / 3</div>
-          <img width="100%" src="assets/images/2.jpg" alt="logo">
-          <div class="text">Caption Three</div>
-        </div>
-         
-        <div class="mySlides ">
-            <div class="numbertext">4 / 3</div>
-            <img width="100%" src="assets/images/5.jpg" alt="logo">
-            <div class="text">Caption Three</div>
-          </div>
-          <div class="mySlides ">
-            <div class="numbertext">5 / 3</div>
-            <img width="100%" src="assets/images/8.jpg" alt="logo">
-            <div class="text">Caption Three</div>
-          </div>
-        
-        <a class="prev"  (click)="plusSlides(-1)">❮</a>
-        <a class="next"  (click)="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot"  (click)="currentSlide(1)"></span> 
-          <span class="dot"  (click)="currentSlide(2)"></span> 
-          <span class="dot"  (click)="currentSlide(3)"></span> 
-          <span class="dot"  (click)="currentSlide(4)"></span> 
-          <span class="dot"  (click)="currentSlide(5)"></span> 
-        </div>
+  <div style="text-align:center">
+    <span class="dot" *ngFor="let photo of galerie; let i = index" (click)="currentSlide(i + 1)"></span>
+  </div>
 </section>

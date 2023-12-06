@@ -22,6 +22,15 @@ export class ActionServicesService {
       })
     );
   }
+  getAllPhotoForAcition(id : number  | undefined): Observable<any> {
+    const url = `${this.apiUrl}/api/Photos/GetPhotos/${id}`;
+    return this.http.get<any>(url).pipe(
+      catchError((error) => {
+        console.error('Error getting tache data:', error);
+        return throwError(error);
+      })
+    );
+  }
   
   getOneAcition(id : number): Observable<any> {
     const url = `${this.apiUrl}/api/Action/GetAction/${id}`;
