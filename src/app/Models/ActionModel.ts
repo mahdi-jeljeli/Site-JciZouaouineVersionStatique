@@ -3,12 +3,14 @@ export const Action=[
         IdAction : 1,
         titre :'action1',
         date : '12/10/2023',
+        description : "hello world",
         lieu : 'algo ',
         type: "culturel",
         URl : "assets/images/1.jpg"
     },
     {   IdAction : 2,
         titre :'action2',
+        description : "hello world",
         date : '12/10/2023',
         lieu : 'algo ',
         type: "culturel",
@@ -17,6 +19,7 @@ export const Action=[
     {   IdAction : 3,
         titre :'action3',
         date : '12/10/2023',
+        description : "hello world",
         lieu : 'algo ',
         type: "culturel",
         URl : "assets/images/12.jpg"
@@ -24,6 +27,7 @@ export const Action=[
     {   IdAction : 4,
         titre :'action4',
         date : '12/10/2023',
+        description : "hello world",
         lieu : 'algo ',
         type: "culturel",
         URl : "assets/images/3.jpg"
@@ -31,6 +35,7 @@ export const Action=[
     {   IdAction : 5,
         titre :'action5',
         date : '12/10/2023',
+        description : "hello world",
         lieu : 'algo ',
         type: "culturel",
         URl : "assets/images/4.jpg"
@@ -38,6 +43,7 @@ export const Action=[
     {   IdAction : 6,
         titre :'action6',
         date : '12/10/2023',
+        description : "hello world",
         lieu : 'algo ',
         type: "culturel",
         URl : "assets/images/13.jpg"

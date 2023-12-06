@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
-import { ActionServicesService } from 'src/app/Services/action-services.service';
 import { Galerie } from 'src/app/Models/Galerie';
 @Component({
   selector: 'app-slide-show-photo-for-one-action',
@@ -9,19 +8,19 @@ import { Galerie } from 'src/app/Models/Galerie';
 export class SlideShowPhotoForOneActionComponent implements OnInit {
   galerie: any[] = [];  // Liste d'images
   @Input() actionId: number | undefined;
-
+  
   constructor( private cdr: ChangeDetectorRef,) { }
 
   ngOnInit(): void {
      // Filtrer la liste d'actions pour obtenir celle avec l'ID spécifié
      this.galerie = Galerie.filter(photo => photo.IdAction === this.actionId);
-     console.log(this.galerie)
      // Vérifier si l'objet action est défini avant de déclencher la détection des changements
      if (this.galerie) {
      
        this.cdr.detectChanges();
      }
     this.showSlides(this.slideIndex);
+
   }
 
   slideIndex: number = 1;
