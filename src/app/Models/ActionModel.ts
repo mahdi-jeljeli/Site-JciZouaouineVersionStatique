@@ -1,28 +1,48 @@
-export const Action=[
+export const Action = [
     {
-        IdAction : 1,
-        titre :'M3a jaafour',
-        date : '12/10/2019',
-        description : "hello world   Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore.Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error. v  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore. Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore.Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error. v  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore. Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore.Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error. v  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore. Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore.Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error. v  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quidem iusto dolores ullam quo alias ab dolore. Minima quia dolor possimus, quo odio mollitia itaque autem, ipsam eius, quasi error",
-        lieu : 'ZOUAOUINE ',
+        IdAction: 1,
+        titre: 'Jaafariye',
+        date: '10/10/2019',
+        description: "Revivons ensemble l'éclat du spectacle 'Jaafriya' animé par le charismatique Jaafer el Guessmi, organisé par JCI Zouaouine en août 2019 au stade sportif de Zouaouine.La nuit d'août où le stade sportif de Zouaouine s'est transformé en un sanctuaire de musique et de divertissement reste gravée dans nos mémoires. Les notes envoûtantes de Jaafer el Guessmi ont rempli l'air, créant une atmosphère électrique qui a captivé les 500 participants présents. C'était bien plus qu'un simple spectacle ; c'était une expérience immersive, un voyage musical qui a transcendé les frontières de la scène pour toucher le cœur de chacun. Les mélodies envoûtantes et les performances captivantes ont transporté le public dans un univers où le temps semblait suspendu.L'engagement de JCI Zouaouine envers l'excellence s'est manifesté dans chaque détail, de la production impeccable à l'accueil chaleureux. Les sourires sur les visages des participants reflétaient la réussite de cet événement, où la musique, la camaraderie et la joie se sont entremêlées pour créer une soirée mémorable.Les moments partagés sous les étoiles, les applaudissements nourris, et l'énergie collective ont laissé une empreinte indélébile. 'Jaafriya' n'était pas seulement un spectacle ; c'était une célébration de la culture, de l'unité et du pouvoir de la musique pour rassembler les gens. Alors que les lumières se sont éteintes et que la dernière note a résonné,  'Jaafriya'  a laissé derrière lui des souvenirs qui continueront à illuminer nos esprits. Un événement qui restera gravé dans l'histoire de JCI Zouaouine et dans le cœur de tous ceux qui ont eu la chance d'y participer.",
+        lieu: 'ZOUAOUINE ',
         type: "culturel",
-        URl : "assets/jaafour/12.jpg"
+        URl: "assets/jaafour/12.jpg"
     },
-    {   IdAction : 2,
-        titre :'Hadhra',
-        description : "hello world",
-        date : '12/10/2020',
-        lieu : 'ZOUAOUINE ',
+    {
+        IdAction: 2,
+        titre: 'Hadhra',
+        description: "Plongeons dans les souvenirs d'une soirée exceptionnelle qui a résonné au rythme envoûtant du spectacle 'Hadhra'. Organisé par JCI Zouaouine en juin 2019, cet événement mémorable a pris vie au stade sportif de Zouaouine, réunissant 300 participants avides de découvrir les trésors de la musique et des chansons tunisiennes.Le stade sportif de Zouaouine s'est métamorphosé en un lieu magique où la tradition musicale tunisienne a pris le devant de la scène. 'Hadhret el Metlin', le groupe musical emblématique, a animé la soirée avec une maîtrise exceptionnelle, capturant l'essence même de la Hadhra et transportant le public dans un voyage sonore authentique.Les mélodies envoûtantes, les chants poignants et la symbiose parfaite entre les instruments ont créé une ambiance empreinte de spiritualité et de connexion profonde avec la richesse culturelle tunisienne. Chaque note résonnait comme un hommage vibrant à la tradition, éveillant les sens et nourrissant l'âme des participants.JCI Zouaouine a une fois de plus brillé dans l'art de l'organisation, offrant une expérience sans pareille. L'éclairage subtil, la disposition soigneusement pensée, et l'accueil chaleureux ont contribué à créer une atmosphère intime, propice à l'appréciation de l'authenticité artistique.Les 300 participants, réunis sous les étoiles de cette nuit d'août, ont partagé un moment inoubliable. L'énergie positive, les applaudissements enthousiastes et les expressions émerveillées ont témoigné du succès de cet événement dédié à la préservation et à la célébration de la musique et des chansons tunisiennes. 'Hadhra' reste gravé dans les mémoires comme une célébration vibrante de la culture musicale tunisienne, une soirée où l'histoire et la tradition ont fusionné avec le présent pour créer une expérience inoubliable pour tous ceux qui ont eu le privilège d'y assister.",
+        date: '12/06/2019',
+        lieu: 'ZOUAOUINE ',
         type: "culturel",
-        URl : "assets/hadhra/14.jpg"
-    },  
-    {   IdAction : 3,
-        titre :'Mini-Souk',
-        date : '12/10/2020',
-        description : "hello world",
-        lieu : 'ZOUAOUINE ',
+        URl: "assets/hadhra/14.jpg"
+    },
+    {
+        IdAction: 3,
+        titre: 'JCI_Souk',
+        date: '20/08/2020',
+        description: "Revivons l'éclatant souvenir du spectacle 'JCI_Souk', une initiative organisée par JCI Zouaouine en août 2019. Cet événement exceptionnel a réuni 400 participants, principalement composés d'enfants, pour une journée mémorable placée sous le signe de la créativité, du partage et de la compétition ludique.Au cœur de cette célébration, les enfants ont pris le devant de la scène, offrant une série de spectacles captivants qui ont émerveillé le public. Jouant différents rôles avec enthousiasme, ils ont transporté les spectateurs dans un univers imaginaire, révélant le talent et la diversité des jeunes artistes de la communauté.Le point culminant de  'JCI_Souk' a été marqué par des compétitions ludiques et délicieuses. Les papilles ont été mises à l'épreuve lors du concours du plat  'JCI_Souk', où le défi était de découvrir le meilleur goût. La compétition du meilleur  'JCI_Souk' a révélé les secrets de la boulangerie locale, tandis que la quête de la plus grande 'pomme de terre' a suscité l'excitation des participants.Un moment de convivialité unique s'est également créé avec la compétition du mangeur de pommes de terre, où le participant démontrant l'appétit le plus vorace a été honoré. Cette compétition ludique a ajouté une touche d'humour et de gaieté à l'événement, renforçant les liens entre les participants.Par ailleurs,  'JCI_Souk' a ouvert ses portes à la créativité artistique en présentant des produits de décoration mettant en avant l'utilisation innovante des plantes. Une exposition riche en couleurs et en idées a permis aux visiteurs d'explorer des concepts uniques et écologiques, soulignant l'importance de la nature dans la création artistique.Au final, 'JCI_Souk' a été bien plus qu'un simple spectacle. C'était une journée où l'innocence des enfants, la compétition amicale et la créativité ont fusionné pour créer une atmosphère chaleureuse et inoubliable. Un événement qui restera gravé dans les mémoires, rappelant la force de la communauté et la joie que peut apporter le partage d'instants simples et mémorables.",
+        lieu: 'ZOUAOUINE ',
         type: "Econommique",
-        URl : "assets/minisouk/10.jpg"
-    }
-  
+        URl: "assets/minisouk/10.jpg"
+    },
+    {
+        IdAction: 4,
+        titre: 'forum_robotique',
+        date: '29/08/2023',
+        description: "La vision crée la réalité, et la créativité éclaire le chemin. ✨ Au camp Robokids Streams, organisé par JCI Zouaouine le 29 août 2023, nous croyons que les enfants sont les leaders de demain, et nous nous efforçons de leur fournir les outils d'apprentissage et d'innovation qui leur permettent de transformer leurs rêves en réalité. 🌟🚀 Notre merveilleux voyage a commencé le premier jour, où nous nous sommes réunis avec la passion des enfants pour découvrir la magie de la programmation et des robots. Nous aspirons à les habiliter à comprendre le langage de la technologie et à apprendre à travers l'expérience, en appréciant chaque étape que nous franchissons ensemble. 🖥️⌨️ Notre objectif est d'encourager leur curiosité et leur créativité, afin qu'ils puissent construire leur propre avenir. Nous croyons que chaque ligne et chaque octet de programmation peut être une aventure d'apprentissage, et que chaque défi peut être une opportunité de croissance. 🔧🧠 Chez Robokids Streams, nous aspirons à faire partie de cette histoire incroyable de former les leaders de l'avenir, ceux qui ont le pouvoir de changer le monde qui les entoure avec la technologie et la créativité. Ensemble, nous construirons une communauté d'innovateurs et de penseurs qui entreprennent un voyage amusant vers le succès. 💪🌠 Nous nous efforçons de réaliser les objectifs du développement durable en offrant des expériences éducatives qui enracinent les valeurs de durabilité et de conscience environnementale dans l'esprit de nos enfants. Nous croyons en la puissance de la technologie de demain pour être une force positive au service de notre planète et pour en faire un endroit meilleur pour tous.",
+        lieu: 'ZOUAOUINE ',
+        type: "Technologique",
+        URl: "assets/forumrobotique01/3.jpg"
+    },
+    {
+        IdAction: 5,
+        titre: 'sahtek_bin_ydik',
+        date: '20/08/2020',
+        description: "Revivons ensemble l'éclatant souvenir de l'événement de santé 'Sahtek Bin Ydik', organisé par JCI Zouaouine en collaboration avec l'Association Tunisienne de Santé Reproductive, qui a eu lieu le 27 mars 2021 à l'hôpital de Zouaouine. Cet événement a rassemblé 120 participants autour d'une cause cruciale : la santé des femmes, la grossesse, et la sensibilisation au cancer du sein.Au cœur de cet événement, l'hôpital de Zouaouine s'est transformé en un lieu dédié au bien-être des femmes, mettant en lumière l'importance de la santé reproductive. 'Sahtek Bin Ydik' a été conçu comme une plateforme inclusive visant à fournir des informations précieuses et à sensibiliser les participantes sur des sujets cruciaux liés à leur santé.Les 120 participants, principalement des femmes, ont eu l'opportunité de bénéficier de séances d'information approfondies sur la santé reproductive, la grossesse et la prévention du cancer du sein. Des experts médicaux et des professionnels de la santé ont partagé leur expertise, répondant aux questions et dissipant les préoccupations liées à ces domaines vitaux de la santé féminine.Des ateliers pratiques et des démonstrations ont été organisés pour renforcer la compréhension des participantes sur les meilleures pratiques en matière de soins de santé. 'Sahtek Bin Ydik' a également servi de plateforme pour la sensibilisation au dépistage précoce du cancer du sein, soulignant l'importance cruciale de la détection précoce pour un traitement réussi.L'événement a créé un espace propice à l'échange d'expériences et de conseils entre les participantes, favorisant ainsi la solidarité et le soutien mutuel. 'Sahtek Bin Ydik' a transcendé le cadre de la sensibilisation pour devenir une célébration de la santé féminine, de la prévention et de l'autonomisation.Grâce à l'engagement de JCI Zouaouine et de l'Association Tunisienne de Santé Reproductive, 'Sahtek Bin Ydik' a laissé une empreinte positive, contribuant à l'amélioration continue de la santé et du bien-être des femmes dans la communauté de Zouaouine.",
+        lieu: 'ZOUAOUINE ',
+        type: "Econommique",
+        URl: "assets/sahtek_bin_ydik/5.jpg"
+    },
+
 ]
