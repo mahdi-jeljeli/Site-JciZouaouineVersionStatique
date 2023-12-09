@@ -28,6 +28,7 @@
     .special-heading+p {
         margin-top: -20;
     }
+
 }
 
     /* end component  */
@@ -91,4 +92,14 @@
         
     }
 
+@media (max-width : 767px) {
+    .JOIN .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .JOIN-content  {
+        width: 90%;
+     }
+}
     /*end JOIN  */
