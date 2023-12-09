@@ -7,7 +7,7 @@
 .slegon .sage {
     position: relative;
     width: 40%;
-    background-color: #eee;
+    background-color: black;
 }
 
 .slegon .sage p {
@@ -23,7 +23,7 @@
     display: flex;
     position: relative;
     width: 100%;
-    border-left: 100px solid #eee;
+    border-left: 100px solid black;
     border-bottom:300px solid transparent ;
 }
 .slegon .sous-section .image{
@@ -35,6 +35,7 @@
  }
 .slegon .sous-section h1 {
     margin-top: 5%;
+    color: #e2dbdb;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
     font-weight: bolder;
@@ -45,6 +46,7 @@
     .slegon {
        flex-direction: column;
         margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .slegon .sage {
         width: 100%;
@@ -61,21 +63,18 @@
     }
     .slegon .sous-section {
         width: 100%;
-        display: flex;
+        min-height: 300px;
         flex-direction: column;
-        position: relative;
         border-left: none;
-        border-bottom:n;
-        align-items: center;
+        border-bottom:none;
+        text-align: center;
+      
         
     }
     .slegon .sous-section h1 {
         position: absolute;
         margin-top: 10%;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 20px;
-        font-weight: bolder;
-        text-align: center;
+        font-size: 30px;
    
     }
     .slegon .sous-section .image {
