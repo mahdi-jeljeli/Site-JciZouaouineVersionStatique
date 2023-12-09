@@ -54,36 +54,19 @@ section {
   font-size: 50px;
 }
 
-.ourProject .text .title .cercle {
-  width: 100px;
-  /* Ajustez la taille du cercle selon vos besoins */
-  height: 100px;
-  /* Assurez-vous que width et height soient égaux pour un cercle */
-  border: 20px solid #3A67B1;
-  /* Épaisseur et couleur du contour du cercle */
-  border-radius: 50%;
-  /* Bordure pour rendre le div circulaire */
-  position: absolute;
-  margin-top: -4%;
-  left: 38%;
-  transform: translate(-50%, -50%);
 
+.ourProject .text p{
+  width: 90%;
+  color: #444;
+  text-align: justify;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.ourProject .text p span{
+ display: block;
 }
 
-.ourProject .text span {
-  width: 100%;
-  font-size: 30px;
-  display: block;
-}
-
-
-@media(max-width : 991px) {
-  .ourProject .text .title .cercle {
-    display: none;
-
-  }
-
-}
 @media(max-width : 768px) {
   
   section {

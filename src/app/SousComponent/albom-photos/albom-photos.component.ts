@@ -7,7 +7,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class AlbomPhotosComponent implements OnInit {
   showMore: boolean = false;
-  slideIndex = 1;
+  slideIndex = 0;
   constructor() { }
   @ViewChild('ourProjectSection') ourProjectSection!: ElementRef;
   scrollToOurProject() {

@@ -35,6 +35,7 @@ import { DevienirMembreComponent } from './devienir-membre/devienir-membre.compo
 import { CredoSectionComponent } from './SousComponent/credo-section/credo-section.component';
 import { MissionComponent } from './SousComponent/mission/mission.component';
 import { VisionComponent } from './SousComponent/vision/vision.component';
+import { SagesseComponent } from './SousComponent/sagesse/sagesse.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { VisionComponent } from './SousComponent/vision/vision.component';
     DevienirMembreComponent,
     CredoSectionComponent,
     MissionComponent,
-    VisionComponent
+    VisionComponent,
+    SagesseComponent
   ],
   imports: [
     BrowserModule,

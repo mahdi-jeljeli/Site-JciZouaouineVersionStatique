@@ -4,7 +4,7 @@
 
 .special-heading {
     width: auto;
-    color: #a8a2a2;
+    color: #eee;
     font-size: 100px;
     text-align: center;
     font-weight: 800;
@@ -77,24 +77,27 @@
 .WHY-content .text {
     flex-basis: calc(100% - 500px);
 }
+.WHY-content .text p{
+    text-align: justify;
+}
 
 .WHY-content .text p:first-of-type {
     font-weight: bold;
     line-height: 2;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 
 }
 
 .WHY-content .text hr {
     width: 50%;
     display: inline-block;
-    border-color: var(--main-color);
+    border-color: #555;
 
 }
 
 .WHY-content .text p:last-of-type {
     line-height: 2;
-    color: var(--third-color);
+    color: #555
 }
 
 @media (max-width : 767px) {

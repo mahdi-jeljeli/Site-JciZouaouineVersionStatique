@@ -22,14 +22,13 @@
 
 }
 
-.notre-projet .prigect .ouer-project .paragraphe span {
-    display: block;
-    font-family: 'Arial', sans-serif;
-    /* Algerian font or your preferred font */
-    font-size: 11px;
-    font-size: 20px;
-    line-height: 1.5;
-    /* Adjust the line height as needed */
+.notre-projet .prigect .ouer-project .paragraphe p {
+    color: #444;
+
+    text-align: justify;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
 .notre-projet .prigect .ouer-project .btn-our-project {

@@ -10,7 +10,6 @@ import { Action } from 'src/app/Models/ActionModel';
 export class ActionComponent implements OnInit {
  
  action : any
- AllAction = Action;
   constructor(
     private route: ActivatedRoute,
     private cdr: ChangeDetectorRef,
